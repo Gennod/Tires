@@ -1,0 +1,61 @@
+.services {
+  text-align: center;
+  .card {
+    @include push--auto;
+    height: rem(392);
+    width: rem(288);
+    text-align: left;
+  }
+  .card-section {
+    position: relative;
+    padding: 0 rem(31);
+  }
+  &__title {
+    font-family: "IBM Medium";
+    text-align: center;
+    font-size: rem($fz-title);
+    margin-top: rem(30);
+  }
+  &__subtitle {
+    font-family: "IBM Medium";
+    font-size: rem($fz-secondary);
+  }
+  &__block {
+    position: absolute;
+    width: 100%;
+    top: rem(-24);
+    height: rem(104);
+    width: rem(286);
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  &__list {
+    list-style: none;
+    margin: 0;
+    font-size: rem($fz-main);
+    color: $dark-gray;
+    padding-bottom: rem(20);
+  }
+  &__wrapper {
+    position: relative;
+    font-size: rem($fz-main);
+  }
+  &__price {
+    position: relative;
+    padding-left: rem(24);
+  }
+  &__time {
+    position: relative;
+    padding-left: rem(24);
+    line-height: rem(17);
+    margin-bottom: rem(15);
+  }
+  &__icon {
+    position: absolute;
+    left: 0;
+    top: rem(5);
+  }
+  &__btn {
+    margin-top: rem(14);
+  }
+}

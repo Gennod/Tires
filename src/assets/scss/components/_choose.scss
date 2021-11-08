@@ -1,0 +1,38 @@
+.choose {
+  position: relative;
+  padding: rem(27) rem(17);
+  &__select {
+    padding-left: rem(15);
+    font-size: rem($fz-main);
+    background-image: url('../img/arrow-down-icon.svg');
+    background-size: rem(16) rem(16);
+    &--inline {
+      display: inline-block;
+      margin-bottom: rem(24);
+    }
+  }
+  &__label {
+    &--flex {
+      display: flex;
+    }
+  }
+  &__title {
+    font-family: "IBM Medium";
+    font-size: rem($fz-secondary);
+    &--secondary {
+      margin: rem(3) rem(8) 0 0;
+    }
+  }
+  &__btn {
+    margin-top: rem(12);
+  }
+  &::before {
+    @include pseudo;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: rem(288);
+    height: rem(1);
+    background-color: $divide-gray;
+  }
+}

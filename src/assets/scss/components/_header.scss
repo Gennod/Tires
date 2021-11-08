@@ -49,7 +49,7 @@
         }
     }
     &__link {
-        font-size: rem(14);
+        font-size: rem($fz-main);
     }
     &__link:hover,
     :focus {
@@ -99,11 +99,14 @@
             width: rem(286);
             background-color: $black-light;
         }
+        a::after {
+            background-image: url('../img/arrow-down-icon.svg');
+        background-size: rem(16) rem(16);
+        }
         &:hover {
             a::after {
                 border-color: $primary-color transparent transparent !important;
             }
         }
     }
-    
 }
