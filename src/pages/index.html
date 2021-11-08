@@ -19,9 +19,9 @@
                     <span>Меню</span>
                 </a>
             </li>
+            <a href="#"><img class="header__logo" width="32" height="32" src="./assets/img/main-logo-icon.svg"
+                alt="main-logo" /></a>
             <li class="header__auth">
-                <a href="#"><img class="header__logo" width="32" height="32" src="./assets/img/main-logo-icon.svg"
-                        alt="main-logo" /></a>
                 <a class="header__link" href="#">
                     <div class="header__icon">
                         <svg width="13" height="17" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -160,22 +160,22 @@
         <div class="grid-container">
             <div class="grid-x">
                 <div class="cell">
-                    <div class="card">
+                    <div class="services__card card">
                         <img src="./assets/img/services-img-1.jpg" alt="services-img-1">
-                        <div class="card-section">
+                        <div class="services__card-section card-section">
                             <div class="services__card-content">
-                                <img class="services__block" src="./assets/img/services-img-union.png"
+                                <img width="286" height="104" class="services__block" src="./assets/img/services-img-union.png"
                                     alt="services-img-union">
                                 <div class="services__wrapper">
                                     <h3 class="services__subtitle">Шиномонтаж</h3>
                                     <ul class="services__list">
                                         <li class="services__time">
-                                            <img class="services__icon" src="./assets/img/services-time-icon.svg"
+                                            <img width="14" height="14" class="services__icon" src="./assets/img/services-time-icon.svg"
                                                 alt="services-time-icon">
                                             Ежедневно с 9:00 до 21:00, без перерывов
                                         </li>
                                         <li class="services__price">
-                                            <img class="services__icon" src="./assets/img/services-price-icon.svg"
+                                            <img width="14" height="14" class="services__icon" src="./assets/img/services-price-icon.svg"
                                                 alt="services-price.icon">
                                             от 500 ₽
                                         </li>
@@ -190,5 +190,40 @@
             </div>
         </div>
         <a class="services__btn button alt" href="#">Посмотреть все услуги</a>
+    </section>
+    <section class="tires">
+        <h2 class="tires__title">Популярные шины</h2>
+        <div class="tires__btns button-group no-gaps">
+            <a class="tires__btn tires__btn--active" href="#">Автомобильные</a>
+            <a class="tires__btn" href="#">Грузовые</a>
+          </div>
+        <div class="tires__grid">
+            <div class="tires__column">
+                <div class="tires__card card">
+                    <img width="288" height="288" class="tires__img" src="./assets/img/tire-img.png" alt="tire-img">
+                        <div class="tires__card-section card-section">
+                            <div class="tires__card-content">
+                                <div class="tires__ratings">
+                                    <div class="tires__comments">
+                                        <img width="14" height="14" src="./assets/img/tires-comments-icon.svg" alt="">
+                                        <span class="tires__gray-block">2</span>
+                                    </div>
+                                    <div class="my-rating"></div>
+                                </div>
+                                <h3 class="tires__subtitle">Goodyear Vector 4Seasons</h3>
+                                <div class="tires__icons">
+                                    <img class="tires__icon" width="14" height="14" src="./assets/img/tires-sun-icon.svg" alt="tires-sun-icon">
+                                    <img class="tires__icon" width="14" height="14" src="./assets/img/tires-accept-icon.svg" alt="tires-accept-icon">
+                                </div>
+                                <span class="tires__gray-block">В наличии: 14 шт.</span>
+                                <div class="tires__card-btns button-group">
+                                    <a class="tires__card-btn tires__card-btn--expanded button" href="#">5 600 ₽</a>
+                                    <a class="tires__card-btn button alt" href="#"><img width="14" height="14" src="./assets/img/tires-heart-icon.svg" alt="tires-heart-icon"></a>
+                                  </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
     </section>
 </main>

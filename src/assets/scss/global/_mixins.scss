@@ -62,6 +62,11 @@
     position: $pos;
 }
 
+@mixin title {
+    font-family: "IBM Medium";
+    font-size: rem($fz-title);
+}
+
 @function rem($num) {
     $strip-unit: $num / ($num * 0 + 1);
     @return $strip-unit / 16 * 1rem;

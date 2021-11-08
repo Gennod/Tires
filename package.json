@@ -11,8 +11,10 @@
   "license": "MIT",
   "dependencies": {
     "foundation-sites": "latest",
+    "grunt-cli": "^1.4.3",
     "jquery": "^3.6.0",
     "motion-ui": "latest",
+    "rateyo": "^3.0.0-alpha.2",
     "what-input": "^5.2.10"
   },
   "devDependencies": {

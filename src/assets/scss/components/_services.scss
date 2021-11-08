@@ -1,19 +1,18 @@
 .services {
   text-align: center;
-  .card {
+  &__card {
     @include push--auto;
-    height: rem(392);
-    width: rem(288);
-    text-align: left;
+    height: rem(392) !important;
+    width: rem(288) !important;
+    text-align: left !important;
   }
-  .card-section {
-    position: relative;
-    padding: 0 rem(31);
+  &__card-section {
+    position: relative !important;
+    padding: 0 rem(31) !important;
   }
   &__title {
-    font-family: "IBM Medium";
+    @include title;
     text-align: center;
-    font-size: rem($fz-title);
     margin-top: rem(30);
   }
   &__subtitle {
