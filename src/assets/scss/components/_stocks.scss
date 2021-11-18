@@ -14,6 +14,7 @@
     min-height: rem(392) !important;
     width: rem(288) !important;
     text-align: left !important;
+    padding-bottom: rem(15);
   }
   &__card-section {
     position: relative !important;
@@ -79,6 +80,6 @@
     top: rem(5);
   }
   &__btn {
-    margin-top: rem(14);
+    margin-top: rem(6);
   }
 }
