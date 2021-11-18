@@ -1,0 +1,74 @@
+.disks {
+  padding: 0 rem(16) rem(20) rem(16);
+  text-align: center;
+  &__card {
+    text-align: left;
+  }
+  &__card-section {
+    padding-top: 0 !important;
+  }
+  &__card-content {
+    padding: rem(6) rem(15);
+  }
+  &__ratings {
+    display: flex;
+    align-items: top;
+  }
+  &__icons {
+    margin-bottom: rem(41);
+  }
+  &__icon {
+    margin-right: rem(6);
+  }
+  &__gray-block {
+    font-size: rem($fz-main);
+    color: $dark-gray;
+  }
+  &__subtitle {
+    font-family: "IBM Medium";
+    font-size: rem($fz-title);
+    line-height: rem(32);
+    margin-bottom: rem(4);
+  }
+  &__comments {
+    margin-right: rem(16);
+    transform: translateY(rem(-4));
+  }
+  &__title {
+    @include title;
+    margin-bottom: rem(20);
+  }
+  &__card-btns {
+    flex-wrap: nowrap;
+    margin-top: rem(10) !important;
+  }
+  &__card-btn {
+    padding: rem(13) !important;
+    margin-left: rem(16) !important;
+    &--expanded {
+      margin-left: 0 !important;
+      flex-grow: 1 !important;
+    }
+  }
+  &__btn {
+    padding: rem(12) rem(16);
+    background: -webkit-linear-gradient(0deg, $blue, $white);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "IBM Medium";
+    &--active {
+      background: $white;
+      -webkit-text-fill-color: $primary-color;
+      color: $primary-color;
+      border-bottom: 1px solid $primary-color;
+    }
+  }
+  &__img {
+    width: rem(288);
+    height: rem(288);
+  }
+  .jq-star {
+    margin-right: rem(5);
+  }
+}

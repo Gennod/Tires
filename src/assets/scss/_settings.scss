@@ -86,6 +86,8 @@ $white: #FFFFFF;
 $blue: #4C65BD;
 $starrrColor: #FFD119 !default;
 $blue-light: #2B3143;
+$orange-dark: #FF7E00;
+$orange-light: #FFE9D5;
 $body-background: $white;
 $body-font-color: $black;
 $body-font-family: 'IBM';
@@ -113,6 +115,8 @@ $print-hrefs: true;
 $fz-main: 14px;
 $fz-secondary: 18px;
 $fz-title: 24px;
+$fz-title-big: 32px;
+$fz-small: 10px;
 
 @include add-foundation-colors;
 
