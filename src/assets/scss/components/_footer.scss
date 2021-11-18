@@ -1,0 +1,34 @@
+.footer {
+  text-align: center;
+  &__content {
+    padding: 0 rem(16);
+  }
+  &__img {
+    width: 100%;
+    height: auto;
+    margin-bottom: rem(24);
+  }
+  &__tel {
+    font-family: "IBM Medium";
+    font-size: rem($fz-secondary);
+    line-height: rem(32);
+    margin-bottom: 0;
+  }
+  &__text {
+    margin-bottom: rem(12);
+  }
+  &__btn {
+    margin-bottom: rem(27);
+  }
+  &__socials {
+    margin-bottom: rem(25);
+  }
+  &__link {
+    padding: rem(12) !important;
+    margin-right: rem(2);
+    img {
+      width: rem(16);
+      height: rem(16);
+    }
+  }
+}

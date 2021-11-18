@@ -1,0 +1,25 @@
+.about {
+  padding: rem(45) rem(16);
+  &__title {
+    font-family: "IBM Medium";
+    font-size: rem($fz-secondary);
+    line-height: rem(24);
+    margin-top: rem(24);
+  }
+  &__logo {
+    position: absolute;
+    top: 0;
+    left: rem(24);
+  }
+  &__imgs {
+    position: relative;
+  }
+  &__img {
+    width: rem(288);
+    height: rem(192);
+  }
+  &__text {
+    line-height: rem(24);
+    margin-bottom: rem(24);
+  }
+}
