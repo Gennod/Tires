@@ -1,3 +1,10 @@
 a {
     color: inherit;
 }
+.button {
+    padding: 0.89em 1.65em !important;
+}
+.button.alt:focus {
+    background:  $white !important;
+    border: 1px solid $primary-color;
+}

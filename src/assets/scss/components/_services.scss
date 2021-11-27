@@ -18,6 +18,7 @@
   &__subtitle {
     font-family: "IBM Medium";
     font-size: rem($fz-secondary);
+    margin-bottom: rem(15);
   }
   &__block {
     position: absolute;
@@ -42,12 +43,29 @@
   &__price {
     position: relative;
     padding-left: rem(24);
+    &:before {
+      @include pseudo;
+      left: 0;
+      top: 0;
+      transform: translateY(rem(3));
+      width: rem(14);
+      height: rem(14);
+      background: url("../img/services-price-icon.svg") center center/contain no-repeat;
+    }
   }
   &__time {
     position: relative;
     padding-left: rem(24);
     line-height: rem(17);
-    margin-bottom: rem(15);
+    margin-bottom: rem(11);
+    &:before {
+      @include pseudo;
+      left: 0;
+      top: 0;
+      width: rem(14);
+      height: rem(14);
+      background: url("../img/time-icon.svg") center center/contain no-repeat;
+    }
   }
   &__icon {
     position: absolute;

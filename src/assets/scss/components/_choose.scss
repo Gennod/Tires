@@ -1,7 +1,9 @@
 .choose {
   position: relative;
   padding: rem(27) rem(17);
+  text-align: center;
   &__select {
+    max-width: rem(288);
     padding-left: rem(15);
     font-size: rem($fz-main);
     background-image: url('../img/arrow-down-icon.svg');
@@ -13,10 +15,14 @@
   }
   &__label {
     &--flex {
-      display: flex;
+      @include dflex;
+      justify-content: center;
     }
   }
   &__title {
+    @include push--auto;
+    max-width: rem(288);
+    text-align: left;
     font-family: "IBM Medium";
     font-size: rem($fz-secondary);
     &--secondary {
@@ -24,14 +30,14 @@
     }
   }
   &__btn {
-    margin-top: rem(12);
+    margin-top: rem(10);
   }
   &::before {
     @include pseudo;
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
-    width: rem(288);
+    width: 88%;
     height: rem(1);
     background-color: $divide-gray;
   }

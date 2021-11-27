@@ -1,6 +1,7 @@
 .header {
     &__content {
         background: $black url("../img/main-bg.jpg") no-repeat;
+        background-size: contain;
         min-height: rem(312);
         padding: rem(176) rem(16) rem(16) rem(16);
     }
@@ -41,6 +42,10 @@
             background-color: $black;
         }
     }
+    &__menu-name {
+        margin-left: rem(4);
+        
+    }
     &__icon-cross {
         display: none;
         svg {
@@ -49,6 +54,9 @@
         }
     }
     &__link {
+        display: flex;
+        color: $white;
+        padding: rem(12) rem(16);
         font-size: rem($fz-main);
     }
     &__link:hover,
@@ -58,6 +66,7 @@
                 fill: $primary-color;
             }
         }
+        color: $primary-color;
     }
     &__auth {
         display: flex;
@@ -107,6 +116,15 @@
             a::after {
                 border-color: $primary-color transparent transparent !important;
             }
+        }
+    }
+}
+@media (min-width: 321px ) {
+    .header {
+        &__content {
+            background: $black url("../img/main-bg-table.jpg") no-repeat;
+            background-position: top;
+            background-size: 100vw;
         }
     }
 }

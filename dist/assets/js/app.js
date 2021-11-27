@@ -22791,6 +22791,16 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).ready(function () {
     starSize: 16,
     emptyColor: '#fff'
   });
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()(".disks__card-btn--like").on("click", function () {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()(".disks__card-btn--like svg").css("fill", "#db6c00");
+  });
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()(".tires__card-btn--like").on("click", function () {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()(".tires__card-btn--like svg").css("fill", "#db6c00");
+  });
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()(".tires__btn").on("click", function (e) {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()(".tires__btn").removeClass("tires__btn--active");
+    e.target.classList.add("tires__btn--active");
+  });
 });
 ;
 

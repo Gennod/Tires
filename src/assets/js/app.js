@@ -47,7 +47,19 @@ $(document).ready(function () {
         starSize: 16,
         emptyColor: '#fff'
       });
+      
+    $(".disks__card-btn--like").on("click", () => {
+      $(".disks__card-btn--like svg").css("fill", "#db6c00");
+    })
 
+    $(".tires__card-btn--like").on("click", () => {
+      $(".tires__card-btn--like svg").css("fill", "#db6c00");
+    })
+
+    $(".tires__btn").on("click", (e) => {
+      $(".tires__btn").removeClass("tires__btn--active");
+      e.target.classList.add("tires__btn--active");
+    })
 });
 
 

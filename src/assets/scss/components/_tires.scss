@@ -3,16 +3,41 @@
   text-align: center;
   &__card {
     text-align: left;
+    max-width: rem(288);
+    margin-bottom: rem(11) !important;
+  }
+  &__column {
+    @include dflex;
+    justify-content: center;
   }
   &__card-content {
-    padding: rem(6) rem(16);
+    padding: rem(8) rem(16);
   }
   &__ratings {
     display: flex;
     align-items: top;
+    position: relative;
+
   }
   &__icons {
-    margin-bottom: rem(41);
+    position: relative;
+    margin-bottom: rem(69);
+    &:before {
+      @include pseudo;
+      width: rem(14);
+      height: rem(14);
+      left: 0;
+      bottom: rem(-20);
+      background: url("../img/tires-sun-icon.svg") center center/contain no-repeat;
+    }
+    &:after {
+      @include pseudo;
+      width: rem(14);
+      height: rem(14);
+      left: rem(24);
+      bottom: rem(-20);
+      background: url("../img/tires-accept-icon.svg") center center/contain no-repeat;
+    }
   }
   &__icon {
     margin-right: rem(6);
@@ -20,6 +45,7 @@
   &__gray-block {
     font-size: rem($fz-main);
     color: $dark-gray;
+    
   }
   &__subtitle {
     font-family: "IBM Medium";
@@ -29,7 +55,18 @@
   }
   &__comments {
     margin-right: rem(16);
+    padding-left: rem(19);
     transform: translateY(rem(-4));
+    position: relative;
+    &:before {
+      @include pseudo;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: rem(14);
+      height: rem(14);
+      background: url("../img/tires-comments-icon.svg") center center/contain no-repeat;
+    }
   }
   &__title {
     @include title;
@@ -37,7 +74,7 @@
   }
   &__card-btns {
     flex-wrap: nowrap;
-    margin-top: rem(10) !important;
+    margin-top: rem(9) !important;
   }
   &__card-btn {
     padding: rem(13) !important;
@@ -46,7 +83,12 @@
       margin-left: 0 !important;
       flex-grow: 1 !important;
     }
+    &--like:focus {
+      background:  none !important;
+      border: 1px solid $primary-color;
+    }
   }
+
   &__btn {
     padding: rem(12) rem(16);
     background: -webkit-linear-gradient(0deg, $blue, $white);
@@ -66,6 +108,14 @@
     height: rem(288);
   }
   .jq-star {
-    margin-right: rem(5);
+    margin-right: rem(4);
+  }
+}
+
+@media (min-width: 520px) {
+  .tires {
+    &__btns {
+      justify-content: center;
+    }
   }
 }

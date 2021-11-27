@@ -1,10 +1,11 @@
 .about {
-  padding: rem(45) rem(16);
+  padding: rem(45) rem(15);
+  padding-bottom: rem(47);
   &__title {
     font-family: "IBM Medium";
     font-size: rem($fz-secondary);
     line-height: rem(24);
-    margin-top: rem(24);
+    margin-top: rem(23);
   }
   &__logo {
     position: absolute;
@@ -15,8 +16,8 @@
     position: relative;
   }
   &__img {
-    width: rem(288);
-    height: rem(192);
+    width: 100%;
+    height: auto;
   }
   &__text {
     line-height: rem(24);

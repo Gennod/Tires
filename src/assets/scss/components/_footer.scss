@@ -1,27 +1,29 @@
 .footer {
   text-align: center;
   &__content {
-    padding: 0 rem(16);
+    padding: rem(2) rem(16);
   }
   &__img {
     width: 100%;
     height: auto;
+
     margin-bottom: rem(24);
+    
   }
   &__tel {
     font-family: "IBM Medium";
     font-size: rem($fz-secondary);
-    line-height: rem(32);
+    line-height: rem(30);
     margin-bottom: 0;
   }
   &__text {
-    margin-bottom: rem(12);
+    margin-bottom: rem(9);
   }
   &__btn {
     margin-bottom: rem(27);
   }
   &__socials {
-    margin-bottom: rem(25);
+    margin-bottom: rem(28);
   }
   &__link {
     padding: rem(12) !important;
@@ -29,6 +31,26 @@
     img {
       width: rem(16);
       height: rem(16);
+    }
+  }
+  &__img-table {
+    display: none;
+  }
+  &__logo {
+    padding: rem(15) 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .footer {
+    &__img {
+      display: none;
+    }
+    &__img-table {
+      display: block;
+      width: 100%;
+      height: auto;
+      margin-bottom: rem(24);
     }
   }
 }

@@ -1,6 +1,6 @@
 .stocks {
   text-align: center;
-  padding-top: rem(18);
+  padding-top: rem(12);
   &__item {
     padding: 0 rem(4);
     background-color: $orange-light;
@@ -15,6 +15,7 @@
     width: rem(288) !important;
     text-align: left !important;
     padding-bottom: rem(15);
+    margin-bottom: rem(12) !important;
   }
   &__card-section {
     position: relative !important;
@@ -23,9 +24,8 @@
   &__title {
     @include title;
     text-align: center;
-    
     font-size: rem($fz-title-big);
-    margin-bottom: rem(14);
+    margin-bottom: rem(18);
   }
   &__stock-time {
     margin-top: rem(40);
@@ -42,7 +42,9 @@
   &__subtitle {
     font-family: "IBM Medium";
     font-size: rem($fz-secondary);
-    line-height: rem(19);
+    line-height: rem(23);
+    transform: translateY(rem(-4));
+    margin-bottom: 0;
   }
   &__block {
     position: absolute;

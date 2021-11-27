@@ -15,7 +15,7 @@
     <div class="header__top">
         <ul class="header__menu menu icons icon-left">
             <li>
-                <a class="header__link" href="#">
+                <button class="header__link">
                     <div class="header__icon">
                         <svg fill="white" width="16" height="10" viewBox="0 0 16 10" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd"
@@ -29,8 +29,8 @@
                                 fill="#FF7E00" />
                         </svg>
                     </div>
-                    <span>Меню</span>
-                </a>
+                    <span class="header__menu-name">Меню</span>
+                </button>
             </li>
             <a href="#"><img class="header__logo" width="32" height="32" src="./assets/img/main-logo-icon.svg"
                     alt="main-logo" /></a>
@@ -110,13 +110,13 @@
         <h1><span class="header__title">Шиномонтаж</span><br>
             <span class="header__title header__title--large">и доставка бесплатно</span>
         </h1>
-        <a class="header__btn button alt" href="#">Подробнее</a>
+        <button class="header__btn button alt">Подробнее</button>
     </div>
 </header>
 <main>
     <section class="choose">
         <label>
-            <h2 class="choose__title">Подберём</h2>
+            <div class="choose__title">Подберём</div>
             <select class="choose__select">
                 <option value="tires">Шины</option>
                 <option value="tires2">Шины2</option>
@@ -183,13 +183,11 @@
                                     <h3 class="services__subtitle">Шиномонтаж</h3>
                                     <ul class="services__list">
                                         <li class="services__time">
-                                            <img width="14" height="14" class="services__icon"
-                                                src="./assets/img/time-icon.svg" alt="services-time-icon">
+
                                             Ежедневно с 9:00 до 21:00, без перерывов
                                         </li>
                                         <li class="services__price">
-                                            <img width="14" height="14" class="services__icon"
-                                                src="./assets/img/services-price-icon.svg" alt="services-price.icon">
+                                            
                                             от 500 ₽
                                         </li>
                                     </ul>
@@ -218,24 +216,20 @@
                         <div class="tires__card-content">
                             <div class="tires__ratings">
                                 <div class="tires__comments">
-                                    <img width="14" height="14" src="./assets/img/tires-comments-icon.svg"
-                                        alt="comments">
                                     <span class="tires__gray-block">2</span>
                                 </div>
                                 <div class="my-rating"></div>
                             </div>
                             <h3 class="tires__subtitle">Goodyear Vector 4Seasons</h3>
                             <div class="tires__icons">
-                                <img class="tires__icon" width="14" height="14" src="./assets/img/tires-sun-icon.svg"
-                                    alt="tires-sun-icon">
-                                <img class="tires__icon" width="14" height="14" src="./assets/img/tires-accept-icon.svg"
-                                    alt="tires-accept-icon">
+
                             </div>
                             <span class="tires__gray-block">В наличии: 14 шт.</span>
                             <div class="tires__card-btns button-group">
-                                <a class="tires__card-btn tires__card-btn--expanded button" href="#">5 600 ₽</a>
-                                <a class="tires__card-btn button alt" href="#"><img width="14" height="14"
-                                        src="./assets/img/tires-heart-icon.svg" alt="tires-heart-icon"></a>
+                                <button class="tires__card-btn tires__card-btn--expanded button" href="#">5 600 ₽</button>
+                                <button class="tires__card-btn tires__card-btn--like button alt" href="#"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.44691 2.22421L7.44705 2.22393L7.44724 2.22358L7.4529 2.21283C7.45854 2.20225 7.46791 2.18503 7.481 2.16213C7.50721 2.11627 7.54808 2.04801 7.60353 1.96485C7.71498 1.79768 7.88216 1.57495 8.10355 1.35355C8.54906 0.908051 9.17938 0.5 10 0.5C10.9257 0.5 11.7979 0.732398 12.4299 1.25911C13.0459 1.77246 13.5 2.62024 13.5 4C13.5 6.71736 12.1976 9.53246 7 13.3799C1.80237 9.53246 0.5 6.71736 0.5 4C0.5 2.62024 0.954078 1.77246 1.57009 1.25911C2.20215 0.732398 3.07429 0.5 4 0.5C4.82062 0.5 5.45095 0.908051 5.89645 1.35355C6.11784 1.57495 6.28503 1.79768 6.39648 1.96485C6.45192 2.04801 6.4928 2.11627 6.51901 2.16213C6.53209 2.18503 6.54146 2.20225 6.54711 2.21283L6.55276 2.22358L6.55309 2.22422L6.55331 2.22465L6.55334 2.2247L6.55348 2.22498L7 3.11803L7.44652 2.22498L7.44667 2.2247L7.44669 2.22465L7.44691 2.22421Z" stroke="#FF7E00"/>
+                                    </svg></button>
                             </div>
                         </div>
                     </div>
@@ -254,24 +248,22 @@
                         <div class="disks__card-content">
                             <div class="disks__ratings">
                                 <div class="disks__comments">
-                                    <img width="14" height="14" src="./assets/img/tires-comments-icon.svg"
-                                        alt="comments">
+
                                     <span class="disks__gray-block">2</span>
                                 </div>
                                 <div class="my-rating"></div>
                             </div>
                             <h3 class="disks__subtitle">Goodyear Vector 4Seasons</h3>
                             <div class="disks__icons">
-                                <img class="disks__icon" width="14" height="14" src="./assets/img/tires-sun-icon.svg"
-                                    alt="disks-sun-icon">
-                                <img class="disks__icon" width="14" height="14" src="./assets/img/tires-accept-icon.svg"
-                                    alt="disks-accept-icon">
                             </div>
                             <span class="disks__gray-block">В наличии: 14 шт.</span>
                             <div class="disks__card-btns button-group">
-                                <a class="disks__card-btn disks__card-btn--expanded button" href="#">5 600 ₽</a>
-                                <a class="disks__card-btn button alt" href="#"><img width="14" height="14"
-                                        src="./assets/img/tires-heart-icon.svg" alt="disks-heart-icon"></a>
+                                <button class="disks__card-btn disks__card-btn--expanded button" href="#">5 600 ₽</button>
+                                <button class="disks__card-btn disks__card-btn--like button alt" href="#">
+                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7.44691 2.22421L7.44705 2.22393L7.44724 2.22358L7.4529 2.21283C7.45854 2.20225 7.46791 2.18503 7.481 2.16213C7.50721 2.11627 7.54808 2.04801 7.60353 1.96485C7.71498 1.79768 7.88216 1.57495 8.10355 1.35355C8.54906 0.908051 9.17938 0.5 10 0.5C10.9257 0.5 11.7979 0.732398 12.4299 1.25911C13.0459 1.77246 13.5 2.62024 13.5 4C13.5 6.71736 12.1976 9.53246 7 13.3799C1.80237 9.53246 0.5 6.71736 0.5 4C0.5 2.62024 0.954078 1.77246 1.57009 1.25911C2.20215 0.732398 3.07429 0.5 4 0.5C4.82062 0.5 5.45095 0.908051 5.89645 1.35355C6.11784 1.57495 6.28503 1.79768 6.39648 1.96485C6.45192 2.04801 6.4928 2.11627 6.51901 2.16213C6.53209 2.18503 6.54146 2.20225 6.54711 2.21283L6.55276 2.22358L6.55309 2.22422L6.55331 2.22465L6.55334 2.2247L6.55348 2.22498L7 3.11803L7.44652 2.22498L7.44667 2.2247L7.44669 2.22465L7.44691 2.22421Z" stroke="#FF7E00"/>
+                                        </svg>
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -332,11 +324,13 @@
     </section>
 </main>
 <footer class="footer">
-    <img class="footer__img" src="./assets/img/footer-img.png" alt="footer-img">
+    <img width="320" height="97" class="footer__img" src="./assets/img/footer-img.png" alt="footer-img">
+    <img class="footer__img-table" src="./assets/img/footer-img-table.png" alt="footer-img">
+
     <div class="footer__content">
-        <p class="footer__tel">8 800 888-88-88</p>
+        <a href="tel:+88008888888" class="footer__tel">8 800 888-88-88</a>
         <p class="footer__text">Звонок бесплатный</p>
-        <a href="tel:88008888888" class="footer__btn button alt expanded">Заказать обратный звонок</a>
+        <button class="footer__btn button alt expanded">Заказать обратный звонок</button>
         <p class="footer__text">Мы в социальных сетях</p>
         <div class="footer__socials">
             <a href="#" class="footer__link button alt"><img src="./assets/img/inst-icon.png" alt="inst-icon" width="16" height="16"></a>
@@ -345,7 +339,7 @@
         </div>
         <p class="footer__text">Создание и продвижение сайта</p>
         <a href="#" class="footer__logo">
-            <img class="footer__logo-img" src="./assets/img/footer-logo.png" alt="footer-logo">
+            <img width="130" height="50" class="footer__logo-img" src="./assets/img/footer-logo.png" alt="footer-logo">
         </a>
     </div>
 </footer>
