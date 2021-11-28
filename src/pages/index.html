@@ -94,15 +94,31 @@
         </div>
     </div>
     <div class="header__content">
-        <h1><span class="header__title">Шиномонтаж</span><br>
-            <span class="header__title header__title--large">и доставка бесплатно</span>
+        <h1 class="header__title-tag">
+            <div class="header__title-wrapper header__title-wrapper--mobile">
+                <span class="header__title">Шиномонтаж</span><br>
+                <span class="header__title header__title--large">и доставка бесплатно</span>
+            </div>
+            <div class="header__title-wrapper header__title-wrapper--table">
+                <span class="header__title">Шиномонтаж и доставка</span><br>
+                <span class="header__title">бесплатно</span>
+            </div>
         </h1>
         <button class="header__btn button alt">Подробнее</button>
     </div>
 </header>
 <main>
     <section class="choose">
-        <label>
+        <div class="choose__text-wrapper choose__text-wrapper--table">
+            <p class="choose__text">Подберём <span class="choose__style choose__style--underline">
+                шины
+            </span> или <span class="choose__style choose__style--underline-dashed">диски</span></p>
+            <p class="choose__text">
+                по <span class="choose__style choose__style--underline">
+                    марке автомобиля
+                </span> или <span class="choose__style choose__style--underline-dashed">параметрам товара</span></p>
+        </div>
+        <label class="choose__label">
             <div class="choose__title">Подберём</div>
             <select class="choose__select">
                 <option value="tires">Шины</option>
@@ -122,67 +138,87 @@
             </select>
         </label>
         <label>
-            <select class="choose__select">
-                <option value="prod1">Производитель</option>
-                <option value="prod2">Производитель2</option>
-                <option value="prod3">Производитель3</option>
-                <option value="prod4">Производитель4</option>
-            </select>
-            <select class="choose__select" disabled>
-                <option value="model1">Модель</option>
-                <option value="model2">Производитель2</option>
-                <option value="model3">Производитель3</option>
-                <option value="model4">Производитель4</option>
-            </select>
-            <select class="choose__select" disabled>
-                <option value="gen1">Поколение</option>
-                <option value="gen2">Производитель2</option>
-                <option value="gen3">Производитель3</option>
-                <option value="gen4">Производитель4</option>
-            </select>
-            <select class="choose__select" disabled>
-                <option value="mod1">Модификация</option>
-                <option value="mod2">Производитель2</option>
-                <option value="mod3">Производитель3</option>
-                <option value="mod4">Производитель4</option>
-            </select>
-            <select class="choose__select" disabled>
-                <option value="carcase">Кузов</option>
-                <option value="carcase2">Производитель2</option>
-                <option value="carcase3">Производитель3</option>
-                <option value="carcase4">Производитель4</option>
-            </select>
+            <div class="choose__grid-top">
+                <select class="choose__select">
+                    <option value="prod1">Производитель</option>
+                    <option value="prod2">Производитель2</option>
+                    <option value="prod3">Производитель3</option>
+                    <option value="prod4">Производитель4</option>
+                </select>
+                <select class="choose__select" disabled>
+                    <option value="model1">Модель</option>
+                    <option value="model2">Производитель2</option>
+                    <option value="model3">Производитель3</option>
+                    <option value="model4">Производитель4</option>
+                </select>
+                <select class="choose__select" disabled>
+                    <option value="gen1">Поколение</option>
+                    <option value="gen2">Производитель2</option>
+                    <option value="gen3">Производитель3</option>
+                    <option value="gen4">Производитель4</option>
+                </select>
+            </div>
+            <div class="choose__grid-bottom">
+                <select class="choose__select" disabled>
+                    <option value="mod1">Модификация</option>
+                    <option value="mod2">Производитель2</option>
+                    <option value="mod3">Производитель3</option>
+                    <option value="mod4">Производитель4</option>
+                </select>
+                <select class="choose__select" disabled>
+                    <option value="carcase">Кузов</option>
+                    <option value="carcase2">Производитель2</option>
+                    <option value="carcase3">Производитель3</option>
+                    <option value="carcase4">Производитель4</option>
+                </select>
+            </div>
         </label>
         <button href="#" class="choose__btn button expanded">Подобрать</button>
     </section>
     <section class="services">
         <h2 class="services__title">Популярные услуги</h2>
-        <div class="grid-container">
-            <div class="grid-x">
-                <div class="cell">
-                    <div class="services__card card">
-                        <img src="./assets/img/services-img-1.jpg" alt="services-img-1">
-                        <div class="services__card-section card-section">
-                            <div class="services__card-content">
-                                <img width="286" height="104" class="services__block" src="./assets/img/img-union.png"
-                                    alt="services-img-union">
-                                <div class="services__wrapper">
-                                    <h3 class="services__subtitle">Шиномонтаж</h3>
-                                    <ul class="services__list">
-                                        <li class="services__time">
+        <div class="services__slider">
+            <div class="services__card card">
+                <img src="./assets/img/services-img-1.jpg" alt="services-img-1">
+                <div class="services__card-section card-section">
+                    <div class="services__card-content">
+                        <img width="286" height="104" class="services__block" src="./assets/img/img-union.png"
+                            alt="services-img-union">
+                        <div class="services__wrapper">
+                            <h3 class="services__subtitle">Шиномонтаж</h3>
+                            <ul class="services__list">
+                                <li class="services__time">
 
-                                            Ежедневно с 9:00 до 21:00, без перерывов
-                                        </li>
-                                        <li class="services__price">
-                                            
-                                            от 500 ₽
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-
+                                    Ежедневно с 9:00 до 21:00, без перерывов
+                                </li>
+                                <li class="services__price">
+                                    
+                                    от 500 ₽
+                                </li>
+                            </ul>
                         </div>
+                    </div>
+                </div>
+            </div>
+            <div class="services__card card">
+                <img src="./assets/img/services-img-1.jpg" alt="services-img-1">
+                <div class="services__card-section card-section">
+                    <div class="services__card-content">
+                        <img width="286" height="104" class="services__block" src="./assets/img/img-union.png"
+                            alt="services-img-union">
+                        <div class="services__wrapper">
+                            <h3 class="services__subtitle">Шиномонтаж</h3>
+                            <ul class="services__list">
+                                <li class="services__time">
 
+                                    Ежедневно с 9:00 до 21:00, без перерывов
+                                </li>
+                                <li class="services__price">
+                                    
+                                    от 500 ₽
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -192,31 +228,88 @@
     <section class="tires">
         <h2 class="tires__title">Популярные шины</h2>
         <div class="tires__btns button-group no-gaps">
-            <a class="tires__btn tires__btn--active" href="#">Автомобильные</a>
-            <a class="tires__btn" href="#">Грузовые</a>
+            <button class="tires__btn tires__btn--active">Автомобильные</button>
+            <button class="tires__btn">Грузовые</button>
+            <button class="tires__btn">Мотошины</button>
         </div>
         <div class="tires__grid">
             <div class="tires__column">
-                <div class="tires__card card">
-                    <img width="288" height="288" class="tires__img" src="./assets/img/tire-img.png" alt="tire-img">
-                    <div class="tires__card-section card-section">
-                        <div class="tires__card-content">
-                            <div class="tires__ratings">
-                                <div class="tires__comments">
-                                    <span class="tires__gray-block">2</span>
+                <div class="tires__slider">
+                    <div class="tires__card card">
+                        <img width="288" height="288" class="tires__img" src="./assets/img/tire-img.png" alt="tire-img">
+                        <div class="tires__card-section card-section">
+                            <div class="tires__card-content">
+                                <div class="tires__ratings">
+                                    <div class="tires__comments">
+                                        <span class="tires__gray-block">2</span>
+                                    </div>
+                                    <div class="my-rating"></div>
                                 </div>
-                                <div class="my-rating"></div>
+                                <h3 class="tires__subtitle">Goodyear Vector 4Seasons</h3>
+                                <div class="tires__icons">
+    
+                                </div>
+                                <div class="tires__card-bottom">
+                                    <span class="tires__gray-block">В наличии: 14 шт.</span>
+                                    <div class="tires__card-btns button-group">
+                                        <button class="tires__card-btn tires__card-btn--expanded button" href="#">5 600 ₽</button>
+                                        <button class="tires__card-btn tires__card-btn--like button alt" href="#"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M7.44691 2.22421L7.44705 2.22393L7.44724 2.22358L7.4529 2.21283C7.45854 2.20225 7.46791 2.18503 7.481 2.16213C7.50721 2.11627 7.54808 2.04801 7.60353 1.96485C7.71498 1.79768 7.88216 1.57495 8.10355 1.35355C8.54906 0.908051 9.17938 0.5 10 0.5C10.9257 0.5 11.7979 0.732398 12.4299 1.25911C13.0459 1.77246 13.5 2.62024 13.5 4C13.5 6.71736 12.1976 9.53246 7 13.3799C1.80237 9.53246 0.5 6.71736 0.5 4C0.5 2.62024 0.954078 1.77246 1.57009 1.25911C2.20215 0.732398 3.07429 0.5 4 0.5C4.82062 0.5 5.45095 0.908051 5.89645 1.35355C6.11784 1.57495 6.28503 1.79768 6.39648 1.96485C6.45192 2.04801 6.4928 2.11627 6.51901 2.16213C6.53209 2.18503 6.54146 2.20225 6.54711 2.21283L6.55276 2.22358L6.55309 2.22422L6.55331 2.22465L6.55334 2.2247L6.55348 2.22498L7 3.11803L7.44652 2.22498L7.44667 2.2247L7.44669 2.22465L7.44691 2.22421Z" stroke="#FF7E00"/>
+                                            </svg></button>
+                                    </div>
+                                </div>
                             </div>
-                            <h3 class="tires__subtitle">Goodyear Vector 4Seasons</h3>
-                            <div class="tires__icons">
-
+                        </div>
+                    </div>
+                    <div class="tires__card card">
+                        <img width="288" height="288" class="tires__img" src="./assets/img/tire-img.png" alt="tire-img">
+                        <div class="tires__card-section card-section">
+                            <div class="tires__card-content">
+                                <div class="tires__ratings">
+                                    <div class="tires__comments">
+                                        <span class="tires__gray-block">2</span>
+                                    </div>
+                                    <div class="my-rating"></div>
+                                </div>
+                                <h3 class="tires__subtitle">Goodyear Vector 4Seasons SUV Gen-2</h3>
+                                <div class="tires__icons">
+    
+                                </div>
+                                <div class="tires__card-bottom">
+                                    <span class="tires__gray-block">В наличии: 14 шт.</span>
+                                    <div class="tires__card-btns button-group">
+                                        <button class="tires__card-btn tires__card-btn--expanded button" href="#">5 600 ₽</button>
+                                        <button class="tires__card-btn tires__card-btn--like button alt" href="#"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M7.44691 2.22421L7.44705 2.22393L7.44724 2.22358L7.4529 2.21283C7.45854 2.20225 7.46791 2.18503 7.481 2.16213C7.50721 2.11627 7.54808 2.04801 7.60353 1.96485C7.71498 1.79768 7.88216 1.57495 8.10355 1.35355C8.54906 0.908051 9.17938 0.5 10 0.5C10.9257 0.5 11.7979 0.732398 12.4299 1.25911C13.0459 1.77246 13.5 2.62024 13.5 4C13.5 6.71736 12.1976 9.53246 7 13.3799C1.80237 9.53246 0.5 6.71736 0.5 4C0.5 2.62024 0.954078 1.77246 1.57009 1.25911C2.20215 0.732398 3.07429 0.5 4 0.5C4.82062 0.5 5.45095 0.908051 5.89645 1.35355C6.11784 1.57495 6.28503 1.79768 6.39648 1.96485C6.45192 2.04801 6.4928 2.11627 6.51901 2.16213C6.53209 2.18503 6.54146 2.20225 6.54711 2.21283L6.55276 2.22358L6.55309 2.22422L6.55331 2.22465L6.55334 2.2247L6.55348 2.22498L7 3.11803L7.44652 2.22498L7.44667 2.2247L7.44669 2.22465L7.44691 2.22421Z" stroke="#FF7E00"/>
+                                            </svg></button>
+                                    </div>
+                                </div>
                             </div>
-                            <span class="tires__gray-block">В наличии: 14 шт.</span>
-                            <div class="tires__card-btns button-group">
-                                <button class="tires__card-btn tires__card-btn--expanded button" href="#">5 600 ₽</button>
-                                <button class="tires__card-btn tires__card-btn--like button alt" href="#"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M7.44691 2.22421L7.44705 2.22393L7.44724 2.22358L7.4529 2.21283C7.45854 2.20225 7.46791 2.18503 7.481 2.16213C7.50721 2.11627 7.54808 2.04801 7.60353 1.96485C7.71498 1.79768 7.88216 1.57495 8.10355 1.35355C8.54906 0.908051 9.17938 0.5 10 0.5C10.9257 0.5 11.7979 0.732398 12.4299 1.25911C13.0459 1.77246 13.5 2.62024 13.5 4C13.5 6.71736 12.1976 9.53246 7 13.3799C1.80237 9.53246 0.5 6.71736 0.5 4C0.5 2.62024 0.954078 1.77246 1.57009 1.25911C2.20215 0.732398 3.07429 0.5 4 0.5C4.82062 0.5 5.45095 0.908051 5.89645 1.35355C6.11784 1.57495 6.28503 1.79768 6.39648 1.96485C6.45192 2.04801 6.4928 2.11627 6.51901 2.16213C6.53209 2.18503 6.54146 2.20225 6.54711 2.21283L6.55276 2.22358L6.55309 2.22422L6.55331 2.22465L6.55334 2.2247L6.55348 2.22498L7 3.11803L7.44652 2.22498L7.44667 2.2247L7.44669 2.22465L7.44691 2.22421Z" stroke="#FF7E00"/>
-                                    </svg></button>
+                        </div>
+                    </div>
+                    <div class="tires__card card">
+                        <img width="288" height="288" class="tires__img" src="./assets/img/tire-img.png" alt="tire-img">
+                        <div class="tires__card-section card-section">
+                            <div class="tires__card-content">
+                                <div class="tires__ratings">
+                                    <div class="tires__comments">
+                                        <span class="tires__gray-block">2</span>
+                                    </div>
+                                    <div class="my-rating"></div>
+                                </div>
+                                <h3 class="tires__subtitle">Goodyear Vector 4Seasons</h3>
+                                <div class="tires__icons">
+    
+                                </div>
+                                <div class="tires__card-bottom">
+                                    <span class="tires__gray-block">В наличии: 14 шт.</span>
+                                    <div class="tires__card-btns button-group">
+                                        <button class="tires__card-btn tires__card-btn--expanded button" href="#">5 600 ₽</button>
+                                        <button class="tires__card-btn tires__card-btn--like button alt" href="#"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M7.44691 2.22421L7.44705 2.22393L7.44724 2.22358L7.4529 2.21283C7.45854 2.20225 7.46791 2.18503 7.481 2.16213C7.50721 2.11627 7.54808 2.04801 7.60353 1.96485C7.71498 1.79768 7.88216 1.57495 8.10355 1.35355C8.54906 0.908051 9.17938 0.5 10 0.5C10.9257 0.5 11.7979 0.732398 12.4299 1.25911C13.0459 1.77246 13.5 2.62024 13.5 4C13.5 6.71736 12.1976 9.53246 7 13.3799C1.80237 9.53246 0.5 6.71736 0.5 4C0.5 2.62024 0.954078 1.77246 1.57009 1.25911C2.20215 0.732398 3.07429 0.5 4 0.5C4.82062 0.5 5.45095 0.908051 5.89645 1.35355C6.11784 1.57495 6.28503 1.79768 6.39648 1.96485C6.45192 2.04801 6.4928 2.11627 6.51901 2.16213C6.53209 2.18503 6.54146 2.20225 6.54711 2.21283L6.55276 2.22358L6.55309 2.22422L6.55331 2.22465L6.55334 2.2247L6.55348 2.22498L7 3.11803L7.44652 2.22498L7.44667 2.2247L7.44669 2.22465L7.44691 2.22421Z" stroke="#FF7E00"/>
+                                            </svg></button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -229,28 +322,88 @@
         <h2 class="disks__title">Популярные диски</h2>
         <div class="disks__grid">
             <div class="disks__column">
-                <div class="disks__card card">
-                    <img width="288" height="288" class="disks__img" src="./assets/img/tire-img.png" alt="tire-img">
-                    <div class="disks__card-section card-section">
-                        <div class="disks__card-content">
-                            <div class="disks__ratings">
-                                <div class="disks__comments">
-
-                                    <span class="disks__gray-block">2</span>
+                <div class="disks__slider">
+                    <div class="disks__card card">
+                        <img width="288" height="288" class="disks__img" src="./assets/img/disks-img-1.png" alt="tire-img">
+                        <div class="disks__card-section card-section">
+                            <div class="disks__card-content">
+                                <div class="disks__ratings">
+                                    <div class="disks__comments">
+    
+                                        <span class="disks__gray-block">2</span>
+                                    </div>
+                                    <div class="my-rating"></div>
                                 </div>
-                                <div class="my-rating"></div>
+                                <h3 class="disks__subtitle">Goodyear Vector 4Seasons</h3>
+                                <div class="disks__icons">
+                                </div>
+                                <div class="disks__card-bottom">
+                                    <span class="disks__gray-block">В наличии: 14 шт.</span>
+                                    <div class="disks__card-btns button-group">
+                                        <button class="disks__card-btn disks__card-btn--expanded button" href="#">5 600 ₽</button>
+                                        <button class="disks__card-btn disks__card-btn--like button alt" href="#">
+                                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7.44691 2.22421L7.44705 2.22393L7.44724 2.22358L7.4529 2.21283C7.45854 2.20225 7.46791 2.18503 7.481 2.16213C7.50721 2.11627 7.54808 2.04801 7.60353 1.96485C7.71498 1.79768 7.88216 1.57495 8.10355 1.35355C8.54906 0.908051 9.17938 0.5 10 0.5C10.9257 0.5 11.7979 0.732398 12.4299 1.25911C13.0459 1.77246 13.5 2.62024 13.5 4C13.5 6.71736 12.1976 9.53246 7 13.3799C1.80237 9.53246 0.5 6.71736 0.5 4C0.5 2.62024 0.954078 1.77246 1.57009 1.25911C2.20215 0.732398 3.07429 0.5 4 0.5C4.82062 0.5 5.45095 0.908051 5.89645 1.35355C6.11784 1.57495 6.28503 1.79768 6.39648 1.96485C6.45192 2.04801 6.4928 2.11627 6.51901 2.16213C6.53209 2.18503 6.54146 2.20225 6.54711 2.21283L6.55276 2.22358L6.55309 2.22422L6.55331 2.22465L6.55334 2.2247L6.55348 2.22498L7 3.11803L7.44652 2.22498L7.44667 2.2247L7.44669 2.22465L7.44691 2.22421Z" stroke="#FF7E00"/>
+                                                </svg>
+                                        </button>
+                                    </div>
+                                </div>
                             </div>
-                            <h3 class="disks__subtitle">Goodyear Vector 4Seasons</h3>
-                            <div class="disks__icons">
+                        </div>
+                    </div>
+                    <div class="disks__card card">
+                        <img width="288" height="288" class="disks__img" src="./assets/img/disks-img-2.png" alt="tire-img">
+                        <div class="disks__card-section card-section">
+                            <div class="disks__card-content">
+                                <div class="disks__ratings">
+                                    <div class="disks__comments">
+    
+                                        <span class="disks__gray-block">2</span>
+                                    </div>
+                                    <div class="my-rating"></div>
+                                </div>
+                                <h3 class="disks__subtitle">Goodyear Vector 4Seasons</h3>
+                                <div class="disks__icons">
+                                </div>
+                                <div class="disks__card-bottom">
+                                    <span class="disks__gray-block">В наличии: 14 шт.</span>
+                                    <div class="disks__card-btns button-group">
+                                        <button class="disks__card-btn disks__card-btn--expanded button" href="#">5 600 ₽</button>
+                                        <button class="disks__card-btn disks__card-btn--like button alt" href="#">
+                                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7.44691 2.22421L7.44705 2.22393L7.44724 2.22358L7.4529 2.21283C7.45854 2.20225 7.46791 2.18503 7.481 2.16213C7.50721 2.11627 7.54808 2.04801 7.60353 1.96485C7.71498 1.79768 7.88216 1.57495 8.10355 1.35355C8.54906 0.908051 9.17938 0.5 10 0.5C10.9257 0.5 11.7979 0.732398 12.4299 1.25911C13.0459 1.77246 13.5 2.62024 13.5 4C13.5 6.71736 12.1976 9.53246 7 13.3799C1.80237 9.53246 0.5 6.71736 0.5 4C0.5 2.62024 0.954078 1.77246 1.57009 1.25911C2.20215 0.732398 3.07429 0.5 4 0.5C4.82062 0.5 5.45095 0.908051 5.89645 1.35355C6.11784 1.57495 6.28503 1.79768 6.39648 1.96485C6.45192 2.04801 6.4928 2.11627 6.51901 2.16213C6.53209 2.18503 6.54146 2.20225 6.54711 2.21283L6.55276 2.22358L6.55309 2.22422L6.55331 2.22465L6.55334 2.2247L6.55348 2.22498L7 3.11803L7.44652 2.22498L7.44667 2.2247L7.44669 2.22465L7.44691 2.22421Z" stroke="#FF7E00"/>
+                                                </svg>
+                                        </button>
+                                    </div>
+                                </div>
                             </div>
-                            <span class="disks__gray-block">В наличии: 14 шт.</span>
-                            <div class="disks__card-btns button-group">
-                                <button class="disks__card-btn disks__card-btn--expanded button" href="#">5 600 ₽</button>
-                                <button class="disks__card-btn disks__card-btn--like button alt" href="#">
-                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M7.44691 2.22421L7.44705 2.22393L7.44724 2.22358L7.4529 2.21283C7.45854 2.20225 7.46791 2.18503 7.481 2.16213C7.50721 2.11627 7.54808 2.04801 7.60353 1.96485C7.71498 1.79768 7.88216 1.57495 8.10355 1.35355C8.54906 0.908051 9.17938 0.5 10 0.5C10.9257 0.5 11.7979 0.732398 12.4299 1.25911C13.0459 1.77246 13.5 2.62024 13.5 4C13.5 6.71736 12.1976 9.53246 7 13.3799C1.80237 9.53246 0.5 6.71736 0.5 4C0.5 2.62024 0.954078 1.77246 1.57009 1.25911C2.20215 0.732398 3.07429 0.5 4 0.5C4.82062 0.5 5.45095 0.908051 5.89645 1.35355C6.11784 1.57495 6.28503 1.79768 6.39648 1.96485C6.45192 2.04801 6.4928 2.11627 6.51901 2.16213C6.53209 2.18503 6.54146 2.20225 6.54711 2.21283L6.55276 2.22358L6.55309 2.22422L6.55331 2.22465L6.55334 2.2247L6.55348 2.22498L7 3.11803L7.44652 2.22498L7.44667 2.2247L7.44669 2.22465L7.44691 2.22421Z" stroke="#FF7E00"/>
-                                        </svg>
-                                </button>
+                        </div>
+                    </div>
+                    <div class="disks__card card">
+                        <img width="288" height="288" class="disks__img" src="./assets/img/disks-img-2.png" alt="tire-img">
+                        <div class="disks__card-section card-section">
+                            <div class="disks__card-content">
+                                <div class="disks__ratings">
+                                    <div class="disks__comments">
+    
+                                        <span class="disks__gray-block">2</span>
+                                    </div>
+                                    <div class="my-rating"></div>
+                                </div>
+                                <h3 class="disks__subtitle">Goodyear Vector 4Seasons</h3>
+                                <div class="disks__icons">
+                                </div>
+                                <div class="disks__card-bottom">
+                                    <span class="disks__gray-block">В наличии: 14 шт.</span>
+                                    <div class="disks__card-btns button-group">
+                                        <button class="disks__card-btn disks__card-btn--expanded button" href="#">5 600 ₽</button>
+                                        <button class="disks__card-btn disks__card-btn--like button alt" href="#">
+                                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7.44691 2.22421L7.44705 2.22393L7.44724 2.22358L7.4529 2.21283C7.45854 2.20225 7.46791 2.18503 7.481 2.16213C7.50721 2.11627 7.54808 2.04801 7.60353 1.96485C7.71498 1.79768 7.88216 1.57495 8.10355 1.35355C8.54906 0.908051 9.17938 0.5 10 0.5C10.9257 0.5 11.7979 0.732398 12.4299 1.25911C13.0459 1.77246 13.5 2.62024 13.5 4C13.5 6.71736 12.1976 9.53246 7 13.3799C1.80237 9.53246 0.5 6.71736 0.5 4C0.5 2.62024 0.954078 1.77246 1.57009 1.25911C2.20215 0.732398 3.07429 0.5 4 0.5C4.82062 0.5 5.45095 0.908051 5.89645 1.35355C6.11784 1.57495 6.28503 1.79768 6.39648 1.96485C6.45192 2.04801 6.4928 2.11627 6.51901 2.16213C6.53209 2.18503 6.54146 2.20225 6.54711 2.21283L6.55276 2.22358L6.55309 2.22422L6.55331 2.22465L6.55334 2.2247L6.55348 2.22498L7 3.11803L7.44652 2.22498L7.44667 2.2247L7.44669 2.22465L7.44691 2.22421Z" stroke="#FF7E00"/>
+                                                </svg>
+                                        </button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -261,38 +414,83 @@
     </section>
     <section class="stocks">
         <h2 class="stocks__title">Акции</h2>
-        <div class="grid-container">
-            <div class="grid-x">
-                <div class="cell">
-                    <div class="stocks__card card">
-                        <img src="./assets/img/stocks-img.png" alt="stocks-img-1">
-                        <div class="stocks__card-section card-section">
-                            <div class="stocks__card-content">
-                                <img width="286" height="104" class="stocks__block" src="./assets/img/img-union.png"
-                                    alt="stocks-img-union">
-                                <div class="stocks__wrapper">
-                                    <h3 class="stocks__subtitle">Тормозные колодки со скидкой 10%</h3>
-                                    <ul class="stocks__list">
-                                        <li class="stocks__item">
-                                            Диски
-                                        </li>
-                                        <li class="stocks__item">
-                                            Шины
-                                        </li>
-                                    </ul>
-                                    <div class="stocks__stock-time">
-                                        <img width="14" height="14" class="stocks__icon"
-                                            src="./assets/img/time-icon.svg" alt="stocks-time-icon">
-                                        <p>Действует до: <span
-                                                class="stocks__card-text stocks__card-text--bold">30.09.2021</span></p>
-                                    </div>
-                                </div>
+        <div class="stocks__slider">
+            <div class="stocks__card card">
+                <img src="./assets/img/stocks-img.png" alt="stocks-img-1">
+                <div class="stocks__card-section card-section">
+                    <div class="stocks__card-content">
+                        <img width="286" height="104" class="stocks__block" src="./assets/img/img-union.png"
+                            alt="stocks-img-union">
+                        <div class="stocks__wrapper">
+                            <h3 class="stocks__subtitle">Тормозные колодки со скидкой 10%</h3>
+                            <ul class="stocks__list">
+                                <li class="stocks__item">
+                                    Диски
+                                </li>
+                                <li class="stocks__item">
+                                    Шины
+                                </li>
+                            </ul>
+                            <div class="stocks__stock-time">
+                                <p>Действует до: <span
+                                        class="stocks__card-text stocks__card-text--bold">30.09.2021</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="stocks__card card">
+                <img src="./assets/img/stocks-img.png" alt="stocks-img-1">
+                <div class="stocks__card-section card-section">
+                    <div class="stocks__card-content">
+                        <img width="286" height="104" class="stocks__block" src="./assets/img/img-union.png"
+                            alt="stocks-img-union">
+                        <div class="stocks__wrapper">
+                            <h3 class="stocks__subtitle">Тормозные колодки со скидкой 10%</h3>
+                            <ul class="stocks__list">
+                                <li class="stocks__item">
+                                    Диски
+                                </li>
+                                <li class="stocks__item">
+                                    Шины
+                                </li>
+                                
+                            </ul>
+                            <div class="stocks__stock-time">
+                                <p>Действует до: <span
+                                        class="stocks__card-text stocks__card-text--bold">30.09.2021</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="stocks__card card">
+                <img src="./assets/img/stocks-img.png" alt="stocks-img-1">
+                <div class="stocks__card-section card-section">
+                    <div class="stocks__card-content">
+                        <img width="286" height="104" class="stocks__block" src="./assets/img/img-union.png"
+                            alt="stocks-img-union">
+                        <div class="stocks__wrapper">
+                            <h3 class="stocks__subtitle">Тормозные колодки со скидкой 10%</h3>
+                            <ul class="stocks__list">
+                                <li class="stocks__item">
+                                    Диски
+                                </li>
+                                <li class="stocks__item">
+                                    Шины
+                                </li>
+                                
+                            </ul>
+                            <div class="stocks__stock-time">
+                                <p>Действует до: <span
+                                        class="stocks__card-text stocks__card-text--bold">30.09.2021</span></p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
         <button class="stocks__btn button alt">Посмотреть все акции</button>
     </section>
     <section class="about">

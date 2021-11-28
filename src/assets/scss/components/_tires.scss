@@ -5,13 +5,19 @@
     text-align: left;
     max-width: rem(288);
     margin-bottom: rem(11) !important;
+    position: relative;
+    height: rem(568);
   }
-  &__column {
-    @include dflex;
-    justify-content: center;
-  }
+  
   &__card-content {
     padding: rem(8) rem(16);
+  }
+  &__card-bottom {
+    position: absolute;
+    width: rem(210);
+    bottom: rem(5);
+    left: 50%;
+    transform: translateX(-50%);
   }
   &__ratings {
     display: flex;
@@ -21,7 +27,6 @@
   }
   &__icons {
     position: relative;
-    margin-bottom: rem(69);
     &:before {
       @include pseudo;
       width: rem(14);
@@ -88,7 +93,6 @@
       border: 1px solid $primary-color;
     }
   }
-
   &__btn {
     padding: rem(12) rem(16);
     background: -webkit-linear-gradient(0deg, $blue, $white);
@@ -107,6 +111,10 @@
     width: rem(288);
     height: rem(288);
   }
+  &__slider {
+    @include push--auto;
+    max-width: rem(288);
+  }
   .jq-star {
     margin-right: rem(4);
   }
@@ -116,6 +124,55 @@
   .tires {
     &__btns {
       justify-content: center;
+    }
+    
+  }
+}
+
+@media (min-width: 768px) {
+  .tires {
+    padding-top: rem(40);
+    &__card {
+      width: rem(288);
+      height: rem(568);
+      margin-right: rem(24);
+      img {
+        width: rem(288);
+        height: rem(288);
+      }
+    }
+    &__grid {
+      margin-bottom: rem(28);
+    }
+    &__slider {
+      @include push--auto;
+      max-width: rem(288 + 288 + 24);
+    }
+    &__title {
+      font-size: rem($fz-title-big);
+      margin-bottom: rem(37);
+    }
+    &__btn {
+      margin: 0 auto;
+      padding: rem(15) rem(16);
+      width: auto !important;
+      position: relative;
+      box-sizing: border-box;
+      &--active {
+        background: $white;
+        -webkit-text-fill-color: $primary-color;
+        color: $primary-color;
+        border-bottom: none;
+        &:after {
+          @include pseudo;
+          width: 100%;
+          height: rem(1);
+          left: 50%;
+          transform: translateX(-50%);
+          bottom: 0;
+          background: $primary-color;
+        }
+      }
     }
   }
 }

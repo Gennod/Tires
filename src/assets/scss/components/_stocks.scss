@@ -11,11 +11,15 @@
   }
   &__card {
     @include push--auto;
-    min-height: rem(392) !important;
+    height: rem(448) !important;
     width: rem(288) !important;
     text-align: left !important;
     padding-bottom: rem(15);
     margin-bottom: rem(12) !important;
+    img {
+      width: rem(288);
+      height: rem(272);
+    }
   }
   &__card-section {
     position: relative !important;
@@ -31,6 +35,15 @@
     margin-top: rem(40);
     position: relative;
     padding-left: rem(25);
+    &:before {
+      @include pseudo;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: rem(14);
+      height: rem(14);
+      background: url("../img/time-icon.svg") center center/contain no-repeat;
+    }
   }
   &__card-text {
     padding-left: rem(5);
@@ -83,5 +96,32 @@
   }
   &__btn {
     margin-top: rem(6);
+  }
+  &__slider {
+    @include push--auto;
+    max-width: rem(288);
+  }
+}
+@media (min-width: 768px) {
+  .stocks {
+    padding-top: rem(29);
+    &__title {
+      font-size: rem($fz-title-big);
+      margin-bottom: rem(36);
+    }
+    &__card {
+      min-width: rem(392);
+      img {
+        width: rem(392);
+        height: rem(272);
+      }
+    }
+    &__slider {
+      @include push--auto;
+      max-width: rem(392);
+    }
+    &__btn {
+      margin-top: rem(18);
+    }
   }
 }

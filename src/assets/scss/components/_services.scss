@@ -5,6 +5,10 @@
     height: rem(392) !important;
     width: rem(288) !important;
     text-align: left !important;
+    img {
+      width: rem(288);
+      height: rem(272);
+    }
   }
   &__card-section {
     position: relative !important;
@@ -74,5 +78,29 @@
   }
   &__btn {
     margin-top: rem(14);
+  }
+  &__slider {
+    @include push--auto;
+    max-width: rem(288);
+  }
+}
+
+@media (min-width: 768px) {
+  .services {
+    &__title {
+      font-size: rem($fz-title-big);
+      margin-bottom: rem(36);
+    }
+    &__card {
+      min-width: rem(392);
+      img {
+        width: rem(392);
+        height: rem(272);
+      }
+    }
+    &__slider {
+      @include push--auto;
+      max-width: rem(392);
+    }
   }
 }

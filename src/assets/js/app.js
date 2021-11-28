@@ -1,5 +1,6 @@
 import $ from 'jquery';
 import 'what-input';
+import './lib/slick.min';
 
 // Foundation JS relies on a global variable. In ES6, all imports are hoisted
 // to the top of the file so if we used `import` to import Foundation,
@@ -60,6 +61,86 @@ $(document).ready(function () {
       $(".tires__btn").removeClass("tires__btn--active");
       e.target.classList.add("tires__btn--active");
     })
+
+    $('.services__slider').slick({
+      dots: false,
+      arrows: false,
+      slidesToShow: 1,
+    });
+    $('.stocks__slider').slick({
+      dots: false,
+      arrows: false,
+      slidesToShow: 1,
+    });
+    $('.tires__slider').slick({
+      dots: false,
+      arrows: false,
+      slidesToShow: 1,
+      responsive: [
+        {
+          breakpoint: 1280,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            infinite: true,
+          }
+        },
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            infinite: true,
+          }
+        },
+      ]
+    });
+    $('.disks__slider').slick({
+      dots: false,
+      arrows: false,
+      slidesToShow: 1,
+      responsive: [
+        {
+          breakpoint: 1280,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            infinite: true,
+          }
+        },
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            infinite: true,
+          }
+        },
+      ]
+    });
+    $('.tires__btns').slick({
+      dots: false,
+      arrows: false,
+      slidesToShow: 2,
+      responsive: [
+        {
+          breakpoint: 1280,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            infinite: true,
+          }
+        },
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            infinite: true,
+          }
+        },
+      ]
+    });
 });
 
 

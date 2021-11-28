@@ -113,10 +113,12 @@ $print-hrefs: true;
 // font-size
 
 $fz-main: 14px;
+$fz-medium: 16px;
 $fz-secondary: 18px;
 $fz-title: 24px;
 $fz-title-big: 32px;
 $fz-small: 10px;
+$fz-title-table: 40px;
 
 @include add-foundation-colors;
 

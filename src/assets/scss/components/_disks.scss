@@ -5,16 +5,21 @@
     text-align: left;
     max-width: rem(288);
     margin-bottom: rem(11) !important;
-  }
-  &__column {
-    @include dflex;
-    justify-content: center;
+    position: relative;
+    height: rem(568);
   }
   &__card-section {
     padding-top: 0 !important;
   }
   &__card-content {
     padding: rem(10) rem(16);
+  }
+  &__card-bottom {
+    position: absolute;
+    width: rem(210);
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
   }
   &__ratings {
     display: flex;
@@ -108,7 +113,59 @@
     width: rem(288);
     height: rem(288);
   }
+  &__slider {
+    @include push--auto;
+    max-width: rem(288);
+  }
   .jq-star {
     margin-right: rem(5);
+  }
+}
+
+@media (min-width: 768px ) {
+  .disks {
+    padding: rem(10) 0;
+    &__card {
+      width: rem(288);
+      height: rem(568);
+      margin-right: rem(24);
+      img {
+        width: rem(288);
+        height: rem(288);
+      }
+    }
+    &__grid {
+      margin-bottom: rem(19);
+    }
+    &__slider {
+      @include push--auto;
+      max-width: rem(288 + 288 + 24);
+    }
+    &__title {
+      font-size: rem($fz-title-big);
+      margin-bottom: rem(37);
+    }
+    &__btn {
+      margin: 0 auto;
+      padding: rem(15) rem(16);
+      width: auto !important;
+      position: relative;
+      box-sizing: border-box;
+      &--active {
+        background: $white;
+        -webkit-text-fill-color: $primary-color;
+        color: $primary-color;
+        border-bottom: none;
+        &:after {
+          @include pseudo;
+          width: 100%;
+          height: rem(1);
+          left: 50%;
+          transform: translateX(-50%);
+          bottom: 0;
+          background: $primary-color;
+        }
+      }
+    }
   }
 }

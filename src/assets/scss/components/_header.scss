@@ -15,6 +15,11 @@
             width: 100%;
         }
     }
+    &__title-wrapper {
+        &--table {
+            display: none;
+        }
+    }
     &__btn {
         border: 1px solid $primary-color;
         color: $primary-color;
@@ -44,7 +49,6 @@
     }
     &__menu-name {
         margin-left: rem(4);
-        
     }
     &__icon-cross {
         display: none;
@@ -109,8 +113,8 @@
             background-color: $black-light;
         }
         a::after {
-            background-image: url('../img/arrow-down-icon.svg');
-        background-size: rem(16) rem(16);
+            background-image: url("../img/arrow-down-icon.svg");
+            background-size: rem(16) rem(16);
         }
         &:hover {
             a::after {
@@ -119,12 +123,76 @@
         }
     }
 }
-@media (min-width: 321px ) {
+@media (min-width: 321px) {
     .header {
         &__content {
             background: $black url("../img/main-bg-table.jpg") no-repeat;
             background-position: top;
             background-size: 100vw;
+        }
+    }
+}
+@media (min-width: 768px) {
+    .header {
+        &__content {
+            min-height: rem(384);
+            padding: rem(136) rem(81) rem(96) rem(87);
+            position: relative;
+            &:after {
+                @include pseudo;
+                bottom: -52%;
+                left: 0;
+                width: 100%;
+                height: rem(265);
+                background: url("../img/choose-img.png") center center/contain
+                    no-repeat;
+            }
+        }
+        &__top {
+            background-color: $black;
+            padding: rem(15) rem(84) !important;
+        }
+        &__menu-name {
+            font-size: rem($fz-medium);
+        }
+        &__logo {
+            top: 68%;
+            width: rem(64);
+            height: rem(64);
+        }
+        &__auth {
+            margin-right: rem(14);
+            justify-content: space-between;
+            min-width: rem(129);
+            padding-top: rem(2);
+        }
+        &__menu {
+            &::after {
+                @include pseudo;
+                bottom: -68%;
+                z-index: 1;
+                left: 50%;
+                transform: translateX(-50%);
+                width: rem(96);
+                height: rem(56);
+                border-radius: rem(16);
+                background-color: $black;
+            }
+        }
+        &__title {
+            padding: 0 0;
+            font-size: rem($fz-title-table);
+        }
+        &__title-tag {
+            line-height: rem(46);
+        }
+        &__title-wrapper {
+            &--mobile {
+                display: none;
+            }
+            &--table {
+                display: inline-block;
+            }
         }
     }
 }

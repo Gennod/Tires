@@ -24,3 +24,22 @@
     margin-bottom: rem(24);
   }
 }
+
+@media (min-width: 768px) {
+  .about {
+    padding: rem(59) rem(84);
+    padding-bottom: rem(72);
+    &__imgs {
+      text-align: center;
+    }
+    &__img {
+      width: rem(600);
+      height: rem(400);
+    }
+    &__title {
+      font-size: rem($fz-title-big);
+      line-height: rem(48);
+      padding-right: rem(10);
+    }
+  }
+}
