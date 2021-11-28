@@ -23630,6 +23630,24 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).ready(function () {
     jquery__WEBPACK_IMPORTED_MODULE_0___default()(".tires__btn").removeClass("tires__btn--active");
     e.target.classList.add("tires__btn--active");
   });
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()("#search").on("click", function (e) {
+    e.preventDefault();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()(".header__input-wrapper").addClass("header__input-wrapper--active");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()(".header__input").addClass("header__input--active");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()("#menu").css("display", "none");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()(".header__logo").css("display", "none");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()("#search").css("display", "none");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()(".header__auth").css("justifyContent", "center");
+  });
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()(".header__cross").on("click", function (e) {
+    e.preventDefault();
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()(".header__input-wrapper").removeClass("header__input-wrapper--active");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()(".header__input").removeClass("header__input--active");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()("#menu").css("display", "flex");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()(".header__logo").css("display", "block");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()("#search").css("display", "block");
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()(".header__auth").css("justifyContent", "space-between");
+  });
   jquery__WEBPACK_IMPORTED_MODULE_0___default()('.services__slider').slick({
     dots: false,
     arrows: false,

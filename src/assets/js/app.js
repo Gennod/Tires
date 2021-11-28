@@ -62,6 +62,26 @@ $(document).ready(function () {
       e.target.classList.add("tires__btn--active");
     })
 
+    $("#search").on("click", (e) => {
+      e.preventDefault();
+      $(".header__input-wrapper").addClass("header__input-wrapper--active");
+      $(".header__input").addClass("header__input--active");
+      $("#menu").css("display", "none");
+      $(".header__logo").css("display", "none");
+      $("#search").css("display", "none");
+      $(".header__auth").css("justifyContent", "center");
+    })
+    $(".header__cross").on("click", (e) => {
+      e.preventDefault();
+      $(".header__input-wrapper").removeClass("header__input-wrapper--active");
+      $(".header__input").removeClass("header__input--active");
+      $("#menu").css("display", "flex");
+      $(".header__logo").css("display", "block");
+      $("#search").css("display", "block");
+      $(".header__auth").css("justifyContent", "space-between");
+    })
+
+
     $('.services__slider').slick({
       dots: false,
       arrows: false,
