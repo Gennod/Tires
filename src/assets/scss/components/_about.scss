@@ -43,3 +43,19 @@
     }
   }
 }
+
+@media (min-width: 1280px) {
+  .about {
+    &__imgs {
+      text-align: left;
+    }
+    &__grid {
+      display: grid;
+      grid-template-columns: rem(600) auto;
+      column-gap: rem(32);
+    }
+    &__title {
+      margin-top: 0;
+    }
+  }
+}

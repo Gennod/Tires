@@ -92,7 +92,7 @@
       margin-bottom: rem(36);
     }
     &__card {
-      min-width: rem(392);
+      min-width: rem(392);  
       img {
         width: rem(392);
         height: rem(272);
@@ -101,6 +101,17 @@
     &__slider {
       @include push--auto;
       max-width: rem(392);
+    }
+  }
+}
+
+@media (min-width: 1280px) {
+  .services {
+    &__slider {
+      max-width: rem(1252);
+    }
+    &__card {
+      margin-right: rem(24);
     }
   }
 }

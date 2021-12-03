@@ -169,3 +169,11 @@
     }
   }
 }
+
+@media (min-width: 1280px) {
+  .disks {
+    &__slider {
+      max-width: rem(1252);
+    }
+  }
+}

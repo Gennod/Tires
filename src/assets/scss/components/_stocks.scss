@@ -125,3 +125,14 @@
     }
   }
 }
+
+@media (min-width: 1280px) {
+  .stocks {
+    &__slider {
+      max-width: rem(1252);
+    }
+    &__card {
+      margin-right: rem(24);
+    }
+  }
+}

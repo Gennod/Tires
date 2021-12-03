@@ -14,7 +14,7 @@
   }
   &__card-bottom {
     position: absolute;
-    width: rem(210);
+    width: rem(225);
     bottom: rem(5);
     left: 50%;
     transform: translateX(-50%);
@@ -50,7 +50,6 @@
   &__gray-block {
     font-size: rem($fz-main);
     color: $dark-gray;
-    
   }
   &__subtitle {
     font-family: "IBM Medium";
@@ -79,7 +78,7 @@
   }
   &__card-btns {
     flex-wrap: nowrap;
-    margin-top: rem(9) !important;
+    margin-top: rem(4) !important;
   }
   &__card-btn {
     padding: rem(13) !important;
@@ -91,6 +90,11 @@
     &--like:focus {
       background:  none !important;
       border: 1px solid $primary-color;
+    }
+    &--active {
+      svg {
+        fill: $primary-color;
+      }
     }
   }
   &__btn {
@@ -114,6 +118,9 @@
   &__slider {
     @include push--auto;
     max-width: rem(288);
+  }
+  &__button {
+    margin-top: rem(22);
   }
   .jq-star {
     margin-right: rem(4);
@@ -173,6 +180,13 @@
           background: $primary-color;
         }
       }
+    }
+  }
+}
+@media (min-width: 1280px) {
+  .tires {
+    &__slider {
+      max-width: rem(1252);
     }
   }
 }

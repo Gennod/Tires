@@ -23620,11 +23620,18 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).ready(function () {
     starSize: 16,
     emptyColor: '#fff'
   });
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()(".disks__card-btn--like").on("click", function () {
-    jquery__WEBPACK_IMPORTED_MODULE_0___default()(".disks__card-btn--like svg").css("fill", "#db6c00");
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()(".disks__card-btn--like").on("click", function (e) {
+    e.currentTarget.classList.toggle("tires__card-btn--active");
   });
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()(".tires__card-btn--like").on("click", function () {
-    jquery__WEBPACK_IMPORTED_MODULE_0___default()(".tires__card-btn--like svg").css("fill", "#db6c00");
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()(".tires__card-btn--like").on("click", function (e) {
+    e.currentTarget.classList.toggle("tires__card-btn--active");
+  });
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()(".choose__select").on("change", function (e) {
+    if (e.target.value != "prod") {
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()(".choose__select--disabled").removeAttr("disabled");
+    } else {
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()(".choose__select--disabled").prop("disabled", true);
+    }
   });
   jquery__WEBPACK_IMPORTED_MODULE_0___default()(".tires__btn").on("click", function (e) {
     jquery__WEBPACK_IMPORTED_MODULE_0___default()(".tires__btn").removeClass("tires__btn--active");
@@ -23651,17 +23658,31 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).ready(function () {
   jquery__WEBPACK_IMPORTED_MODULE_0___default()('.services__slider').slick({
     dots: false,
     arrows: false,
-    slidesToShow: 1
+    slidesToShow: 3,
+    responsive: [{
+      breakpoint: 1280,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true
+      }
+    }]
   });
   jquery__WEBPACK_IMPORTED_MODULE_0___default()('.stocks__slider').slick({
     dots: false,
     arrows: false,
-    slidesToShow: 1
+    slidesToShow: 3,
+    responsive: [{
+      breakpoint: 1280,
+      settings: {
+        slidesToShow: 1
+      }
+    }]
   });
   jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tires__slider').slick({
     dots: false,
     arrows: false,
-    slidesToShow: 1,
+    slidesToShow: 4,
     responsive: [{
       breakpoint: 1280,
       settings: {
@@ -23681,7 +23702,7 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).ready(function () {
   jquery__WEBPACK_IMPORTED_MODULE_0___default()('.disks__slider').slick({
     dots: false,
     arrows: false,
-    slidesToShow: 1,
+    slidesToShow: 4,
     responsive: [{
       breakpoint: 1280,
       settings: {

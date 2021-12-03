@@ -49,12 +49,20 @@ $(document).ready(function () {
         emptyColor: '#fff'
       });
       
-    $(".disks__card-btn--like").on("click", () => {
-      $(".disks__card-btn--like svg").css("fill", "#db6c00");
-    })
+      $(".disks__card-btn--like").on("click", (e) => {
+        e.currentTarget.classList.toggle("tires__card-btn--active");
+      })
 
-    $(".tires__card-btn--like").on("click", () => {
-      $(".tires__card-btn--like svg").css("fill", "#db6c00");
+
+    $(".tires__card-btn--like").on("click", (e) => {
+      e.currentTarget.classList.toggle("tires__card-btn--active");
+    })
+    $(".choose__select").on("change", (e) => {
+      if (e.target.value != "prod") {
+        $(".choose__select--disabled").removeAttr("disabled");
+      } else {
+        $(".choose__select--disabled").prop("disabled", true);
+      }
     })
 
     $(".tires__btn").on("click", (e) => {
@@ -85,17 +93,35 @@ $(document).ready(function () {
     $('.services__slider').slick({
       dots: false,
       arrows: false,
-      slidesToShow: 1,
+      slidesToShow: 3,
+      responsive: [
+        {
+          breakpoint: 1280,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            infinite: true,
+          }
+        },
+      ]
     });
     $('.stocks__slider').slick({
       dots: false,
       arrows: false,
-      slidesToShow: 1,
+      slidesToShow: 3,
+      responsive: [
+        {
+          breakpoint: 1280,
+          settings: {
+            slidesToShow: 1
+          }
+        }
+      ]
     });
     $('.tires__slider').slick({
       dots: false,
       arrows: false,
-      slidesToShow: 1,
+      slidesToShow: 4,
       responsive: [
         {
           breakpoint: 1280,
@@ -118,7 +144,7 @@ $(document).ready(function () {
     $('.disks__slider').slick({
       dots: false,
       arrows: false,
-      slidesToShow: 1,
+      slidesToShow: 4,
       responsive: [
         {
           breakpoint: 1280,

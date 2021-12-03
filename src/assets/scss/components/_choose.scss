@@ -105,6 +105,7 @@
     }
     &__select {
       max-width: rem(184);
+      cursor: default;
     }
     &__grid-top {
       display: grid;
@@ -130,5 +131,31 @@
       height: rem(1);
       background-color: $divide-gray;
     }
+  }
+}
+
+@media (min-width: 1280px) {
+  .choose {
+    padding-top: rem(20);
+    &__text {
+      display: inline;
+    }
+    &__inputs {
+      display: grid;
+      grid-template-columns: auto auto;
+      column-gap: rem(24);
+    }
+    &__grid-bottom {
+      justify-content: flex-start;
+    }
+    &__grid-top {
+      justify-content: flex-end;
+    }
+    &__btn {
+      margin-top: 0;
+    }
+    &__text-wrapper {
+      min-width: rem(638);
+  }
   }
 }

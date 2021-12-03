@@ -36,8 +36,21 @@
   &__img-table {
     display: none;
   }
+  &__img-desk {
+    display: none;
+  }
   &__logo {
     padding: rem(15) 0;
+  }
+  &__btn {
+    max-width: rem(274);
+    display: inline-block !important;
+  }
+  &__left {
+    display: none;
+  }
+  &__right {
+    display: none;
   }
 }
 
@@ -51,6 +64,58 @@
       width: 100%;
       height: auto;
       margin-bottom: rem(24);
+    }
+  }
+}
+
+@media (min-width: 1280px) {
+  .footer {
+    padding-bottom: rem(100);
+    position: relative;
+    &__img-table {
+      display: none;
+    }
+    &__img-desk {
+      display: block;
+      width: 100%;
+      height: auto;
+      margin-bottom: rem(24);
+    }
+    &__column {
+      text-align: left;
+    }
+    &__column-name {
+      font-family: "IBM Medium";
+      font-size: rem($fz-medium);
+      color: $primary-color;
+      margin-bottom: 0;
+    }
+    &__item {
+      margin-top: rem(16);
+      line-height: rem(16);
+    }
+    &__left {
+      display: grid;
+      grid-template-columns: repeat(2, rem(184));
+      column-gap: rem(24);
+      position: absolute;
+      left: rem(28);
+      top: rem(55);
+      font-size: rem($fz-main);
+    }
+    &__right {
+      display: grid;
+      grid-template-columns: repeat(2, rem(184));
+      column-gap: rem(24);
+      position: absolute;
+      right: rem(28);
+      top: rem(55);
+      font-size: rem($fz-main);
+    }
+    &__list {
+      padding: 0;
+      margin: 0;
+      list-style: none;
     }
   }
 }
