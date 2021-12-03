@@ -22,6 +22,7 @@
   &__text {
     line-height: rem(24);
     margin-bottom: rem(24);
+    color: $dark-gray;
   }
 }
 
@@ -46,6 +47,7 @@
 
 @media (min-width: 1280px) {
   .about {
+    padding: rem(50) rem(28);
     &__imgs {
       text-align: left;
     }
@@ -55,7 +57,7 @@
       column-gap: rem(32);
     }
     &__title {
-      margin-top: 0;
+      margin: 0;
     }
   }
 }

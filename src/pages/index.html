@@ -7,7 +7,7 @@
                 <button class="header__input-find">Найти</butt>
                 <button class="header__cross">&times;</button>
             </div>
-            <li>
+            <li class="header__burger">
                 <button class="header__link" id="menu">
                     <div class="header__icon">
                         <svg fill="white" width="16" height="10" viewBox="0 0 16 10" xmlns="http://www.w3.org/2000/svg">
@@ -25,6 +25,20 @@
                     <span class="header__menu-name">Меню</span>
                 </button>
             </li>
+            <li class="header__menu-desk">
+                <ul class="vertical medium-horizontal menu" data-responsive-menu="accordion medium-dropdown">
+                    <li class="header__menu-item-desk">
+                        <a href="#">Товары</a>
+                    </li>
+                    <li class="header__menu-item-desk">
+                        <a href="#">Услуги</a>
+                        
+                    </li>
+                    <li class="header__menu-item-desk">
+                        <a href="#">Компания</a>
+                    </li>
+                </ul>
+            </li>
             <a href="#"><img class="header__logo" width="32" height="32" src="./assets/img/main-logo-icon.svg"
                     alt="main-logo" /></a>
             <li class="header__auth">
@@ -37,7 +51,30 @@
                         </svg>
                     </div>
                 </button>
-                <button class="header__link">
+                <button class="header__link header__link--desk">
+                    <div class="header__icon">
+                        Личный кабинет
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M3 7.72499L3.54236 7L8 9.91976L12.4576 7L13 7.72499L8 11L3 7.72499Z" fill="white"/>
+                            </svg>
+                    </div>
+                </button>
+                <button class="header__link header__link--desk">
+                    <div class="header__icon">
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7.44691 2.22421L7.44705 2.22393L7.44724 2.22358L7.4529 2.21283C7.45854 2.20225 7.46791 2.18503 7.481 2.16213C7.50721 2.11627 7.54808 2.04801 7.60353 1.96485C7.71498 1.79768 7.88216 1.57495 8.10355 1.35355C8.54906 0.908051 9.17938 0.5 10 0.5C10.9257 0.5 11.7979 0.732398 12.4299 1.25911C13.0459 1.77246 13.5 2.62024 13.5 4C13.5 6.71736 12.1976 9.53246 7 13.3799C1.80237 9.53246 0.5 6.71736 0.5 4C0.5 2.62024 0.954078 1.77246 1.57009 1.25911C2.20215 0.732398 3.07429 0.5 4 0.5C4.82062 0.5 5.45095 0.908051 5.89645 1.35355C6.11784 1.57495 6.28503 1.79768 6.39648 1.96485C6.45192 2.04801 6.4928 2.11627 6.51901 2.16213C6.53209 2.18503 6.54146 2.20225 6.54711 2.21283L6.55276 2.22358L6.55309 2.22422L6.55331 2.22465L6.55334 2.2247L6.55348 2.22498L7 3.11803L7.44652 2.22498L7.44667 2.2247L7.44669 2.22465L7.44691 2.22421Z" stroke="white"/>
+                            </svg>
+                            
+                    </div>
+                </button>
+                <button class="header__link header__link--desk">
+                    <div class="header__icon">
+                        <svg width="15" height="10" viewBox="0 0 15 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10 3.5H1.5L3.5 9.5H10.5L12.5 0.5H15" stroke="white"/>
+                            </svg>
+                    </div>
+                </button>
+                <button class="header__link header__link--visible">
                     <div class="header__icon">
                         <svg width="12" height="16" viewBox="0 0 12 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd"
@@ -97,6 +134,80 @@
                     </ul>
                 </li>
             </ul>
+        </div>
+        <div class="header__menu-big">
+           <div class="header__grid">
+               <div class="header__left">
+                   <ul class="header__left-list">
+                       <li class="header__left-item">
+                           <p class="header__left-name">Автомобильные шины</p>
+                           <ul class="header__left-descr">
+                               <li><a href="#">Летние</a></li>
+                               <li><a href="#">Зимние</a></li>
+                               <li><a href="#">Шипованые</a></li>
+                               <li><a href="#">Фрикционные</a></li>
+                               <li><a href="#">Б/у</a></li>
+                           </ul>
+                           <ul class="header__left-about">
+                               <li><a href="#">R13</a></li>
+                               <li><a href="#">R14</a></li>
+                               <li><a href="#">R15</a></li>
+                               <li><a href="#">R16</a></li>
+                               <li><a href="#">R17</a></li>
+                               <li><a href="#">R18</a></li>
+                               <li><a href="#">R19</a></li>
+                               <li><a href="#">R20</a></li>
+                           </ul>
+                       </li>
+                       <li class="header__left-item">
+                        <p class="header__left-name">Грузовые шины</p>
+                        <ul class="header__left-descr">
+                            <li><a href="#">Ведущие</a></li>
+                            <li><a href="#">Универсальные</a></li>
+                            <li><a href="#">Рулевые</a></li>
+                            <li><a href="#">Прицеп</a></li>
+                            <li><a href="#">Рулевые + прицеп</a></li>
+                        </ul>
+                        <ul class="header__left-about">
+                            <li><a href="#">R22,5</a></li>
+                            <li><a href="#">R24</a></li>
+                            <li><a href="#">R21</a></li>
+                            <li><a href="#">R20</a></li>
+                            <li><a href="#">R19,5</a></li>
+                        </ul>
+                    </li>
+                    <li class="header__left-item">
+                        <p class="header__left-name">Мотошины</p>
+                        <ul class="header__left-descr">
+                            <li><a href="#">Спорт</a></li>
+                            <li><a href="#">Спорт-турист</a></li>
+                            <li><a href="#">Чоппер/круйзер</a></li>
+                            <li><a href="#">Эндуро</a></li>
+                            <li><a href="#">Классика</a></li>
+                        </ul>
+                        <ul class="header__left-about">
+                            <li><a href="#">R12</a></li>
+                            <li><a href="#">R13</a></li>
+                            <li><a href="#">R14</a></li>
+                            <li><a href="#">R15</a></li>
+                            <li><a href="#">R16</a></li>
+                        </ul>
+                    </li>
+                   </ul>
+               </div>
+               <div class="header__right">
+                   <ul class="header__right-list">
+                       <li><a href="#">Аксессуары для шин, дисков и шиномонтажа</a></li>
+                       <li><a href="#">Аккумуляторы</a></li>
+                       <li><a href="#">Автомасла</a></li>
+                       <li><a href="#">Автоэлектроника</a></li>
+                       <li><a href="#">Автохимия и автокосметика</a></li>
+                       <li><a href="#">Внешний декор, тюнинг, защита</a></li>
+                       <li><a href="#">Инструменты и техническая помощь</a></li>
+                       <li><a href="#">Компрессоры</a></li>
+                   </ul>
+               </div>
+           </div>
         </div>
     </div>
     

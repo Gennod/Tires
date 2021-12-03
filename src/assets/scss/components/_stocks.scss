@@ -129,10 +129,11 @@
 @media (min-width: 1280px) {
   .stocks {
     &__slider {
+      @include push--auto;
       max-width: rem(1252);
     }
     &__card {
-      margin-right: rem(24);
+      margin: 0 rem(12);
     }
   }
 }

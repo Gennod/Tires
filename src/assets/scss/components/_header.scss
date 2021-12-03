@@ -122,6 +122,9 @@
         padding: rem(12) rem(16);
         font-size: rem($fz-main);
         cursor: pointer;
+        &--desk {
+            display: none;
+        }
     }
     &__link:hover,
     :focus {
@@ -158,6 +161,26 @@
         a {
             font-family: "IBM Medium";
         }
+    }
+    &__menu-big {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        width: 100%;
+        background-color: $blue-light;
+        color: $white;
+        padding: rem(72) 0 rem(48) 0;
+    }
+    &__menu-desk {
+        display: none;
+    }
+    &__cross {
+        cursor: pointer;
+    }
+    &__input-find {
+        cursor: pointer;
     }
     .is-accordion-submenu-parent {
         a {
@@ -204,8 +227,7 @@
                 left: 0;
                 width: 100%;
                 height: rem(265);
-                background: url("../img/choose-img.png") center center/contain
-                    no-repeat;
+                background: url("../img/choose-img.png") center center/contain no-repeat;
             }
         }
         &__top {
@@ -271,7 +293,7 @@
             transform: translateY(-50%);
             max-width: 0;
             opacity: 0;
-            transition: 1.3s ease;
+            transition: 0.8s ease;
             &:before {
                 @include pseudo;
                 left: rem(16);
@@ -302,14 +324,78 @@
             background: url("../img/main-bg-desk.jpg") center center/cover no-repeat;
             padding: rem(84) rem(70) rem(220) rem(610);
             &:after {
-                background: url("../img/choose-img-desk.png") center center/contain
-                no-repeat;
+                background: url("../img/choose-img-desk.png") center center/contain no-repeat;
                 height: rem(200);
                 bottom: -30%;
             }
         }
-        &__text-wrapper {
-            min-width: rem(638);
+        &__burger {
+            display: none;
+        }
+        &__input-wrapper {
+            &--active {
+                left: rem(-27);
+                min-width: rem(800);
+            }
+        }
+        &__input {
+            width: 100%;
+            &--active {
+                max-width: rem(800);
+            }
+        }
+        &__menu-desk {
+            display: block;
+        }
+        &__menu-item-desk {
+            position: relative;
+            margin-right: rem(8);
+            &:after {
+                cursor: pointer;
+                @include pseudo;
+                right: rem(-4);
+                top: 50%;
+                transform: translateY(-50%);
+                width: rem(16);
+                height: rem(16);
+                background: url("../img/arrow-down-icon-white.svg") center center/contain no-repeat;    
+            }
+        }
+        &__link {
+            &--visible {
+                display: none;
+            }
+            &--desk {
+                display: block;
+            }
+        }
+        &__grid {
+            padding: rem(32) rem(58) rem(48) rem(58);
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            column-gap: rem(132);
+            ul {
+                margin: 0;
+            }
+        }
+        &__left-name {
+            font-family: "IBM Medium";
+            font-size: rem($fz-title);
+            color: $primary-color;
+            margin-bottom: rem(16);
+        }
+        &__left-descr {
+            @include dflex;
+            justify-content: space-between;
+        }
+        &__left-about {
+            @include dflex;
+            justify-content: space-between;
+        }
+        &__left-item {
+            border-bottom: 1px solid $black-light;
+            padding: rem(32) 0 rem(24) rem(120);
         }
     }
+
 }

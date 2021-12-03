@@ -40,6 +40,10 @@ $(document).ready(function () {
         }
     })
 
+    $(".header__menu-item-desk").on("click", () => {
+      $(".header__menu-big").slideToggle("fast");
+  })
+
     $(".my-rating").starRating({
         initialRating: 4.5,
         strokeColor: '#EFD8C3',
@@ -78,6 +82,7 @@ $(document).ready(function () {
       $(".header__logo").css("display", "none");
       $("#search").css("display", "none");
       $(".header__auth").css("justifyContent", "center");
+      $(".header__menu-desk").css("display", "none");
     })
     $(".header__cross").on("click", (e) => {
       e.preventDefault();
@@ -87,6 +92,7 @@ $(document).ready(function () {
       $(".header__logo").css("display", "block");
       $("#search").css("display", "block");
       $(".header__auth").css("justifyContent", "space-between");
+      $(".header__menu-desk").css("display", "block");
     })
 
 
@@ -206,7 +212,7 @@ $(document).ready(function () {
       activeColor: '#EFD8C3',
       ratedColor: '#EFD8C3',
       useGradient: true,
-      readOnly: true,
+      readOnly: false,
       disableAfterRate: true,
       baseUrl: false,
       starGradient: {
