@@ -8,6 +8,7 @@
     img {
       width: rem(288);
       height: rem(272);
+      object-fit: cover;
     }
   }
   &__card-section {
@@ -22,7 +23,8 @@
   &__subtitle {
     font-family: "IBM Medium";
     font-size: rem($fz-secondary);
-    margin-bottom: rem(15);
+    margin-bottom: rem(19);
+    line-height: rem(18);
   }
   &__block {
     position: absolute;
@@ -65,7 +67,7 @@
     &:before {
       @include pseudo;
       left: 0;
-      top: 0;
+      top: rem(2);
       width: rem(14);
       height: rem(14);
       background: url("../img/time-icon.svg") center center/contain no-repeat;
@@ -101,6 +103,9 @@
     &__slider {
       @include push--auto;
       max-width: rem(392);
+    }
+    &__btn {
+      margin-top: rem(15);
     }
   }
 }

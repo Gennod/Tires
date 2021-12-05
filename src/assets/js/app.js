@@ -92,7 +92,9 @@ $(document).ready(function () {
       $(".header__logo").css("display", "block");
       $("#search").css("display", "block");
       $(".header__auth").css("justifyContent", "space-between");
-      $(".header__menu-desk").css("display", "block");
+      if ($(".header__link--desk").css("display") == "block") {
+        $(".header__menu-desk").css("display", "block");
+      }
     })
 
 
@@ -173,7 +175,9 @@ $(document).ready(function () {
     $('.tires__btns').slick({
       dots: false,
       arrows: false,
-      slidesToShow: 2,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      infinite: true,
       responsive: [
         {
           breakpoint: 1280,

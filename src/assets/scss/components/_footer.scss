@@ -6,7 +6,6 @@
   &__img {
     width: 100%;
     height: auto;
-
     margin-bottom: rem(24);
     
   }
@@ -17,7 +16,7 @@
     margin-bottom: 0;
   }
   &__text {
-    margin-bottom: rem(9);
+    margin-bottom: rem(10);
   }
   &__btn {
     margin-bottom: rem(27);
@@ -64,6 +63,9 @@
       width: 100%;
       height: auto;
       margin-bottom: rem(24);
+    }
+    &__socials {
+      margin-bottom: rem(27);
     }
   }
 }

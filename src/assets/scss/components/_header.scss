@@ -137,7 +137,7 @@
     }
     &__auth {
         display: flex;
-        margin-right: rem(13);
+        margin-right: rem(20);
     }
     &__logo {
         position: absolute;
@@ -219,7 +219,7 @@
     .header {
         &__content {
             min-height: rem(384);
-            padding: rem(136) rem(81) rem(96) rem(87);
+            padding: rem(134) rem(81) rem(96) rem(85);
             position: relative;
             &:after {
                 @include pseudo;
@@ -243,9 +243,9 @@
             height: rem(64);
         }
         &__auth {
-            margin-right: rem(14);
+            margin-right: rem(17);
             justify-content: space-between;
-            min-width: rem(129);
+            min-width: rem(125);
             padding-top: rem(2);
         }
         &__menu {
@@ -262,8 +262,11 @@
             }
         }
         &__title {
-            padding: 0 0;
+            padding: rem(3) rem(3);
             font-size: rem($fz-title-table);
+        }
+        &__btn {
+            margin-top: rem(3);
         }
         &__title-tag {
             line-height: rem(46);
@@ -320,15 +323,22 @@
 
 @media (min-width: 1280px) {
     .header {
-        &__content {
+        &__wrapper {
             background: url("../img/main-bg-desk.jpg") center center/cover no-repeat;
-            padding: rem(84) rem(70) rem(220) rem(610);
+        }
+        &__content {
+            background: none;
+            padding: rem(65) rem(70) rem(184) rem(607);
             &:after {
                 background: url("../img/choose-img-desk.png") center center/contain no-repeat;
                 height: rem(200);
                 bottom: -30%;
             }
         }
+        &__title-tag {
+            margin-bottom: rem(4);
+        }
+
         &__burger {
             display: none;
         }
@@ -349,7 +359,7 @@
         }
         &__menu-item-desk {
             position: relative;
-            margin-right: rem(8);
+            margin-right: rem(27);
             &:after {
                 cursor: pointer;
                 @include pseudo;
@@ -395,6 +405,18 @@
         &__left-item {
             border-bottom: 1px solid $black-light;
             padding: rem(32) 0 rem(24) rem(120);
+        }
+        &__top {
+            padding: rem(15) rem(30) !important;
+        }
+        &__auth {
+            margin-right: 0;
+            min-width: rem(394);
+        }
+        &__icon {
+            font-family: "IBM Medium";
+            font-size: rem($fz-medium);
+            padding-left: 0;
         }
     }
 

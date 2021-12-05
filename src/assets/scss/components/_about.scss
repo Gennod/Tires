@@ -1,5 +1,5 @@
 .about {
-  padding: rem(45) rem(15);
+  padding: rem(44) rem(15);
   padding-bottom: rem(47);
   &__title {
     font-family: "IBM Medium";
@@ -21,7 +21,7 @@
   }
   &__text {
     line-height: rem(24);
-    margin-bottom: rem(24);
+    margin-bottom: rem(23);
     color: $dark-gray;
   }
 }
@@ -41,6 +41,9 @@
       font-size: rem($fz-title-big);
       line-height: rem(48);
       padding-right: rem(10);
+    }
+    &__text {
+      margin-bottom: rem(24);
     }
   }
 }

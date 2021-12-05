@@ -23658,7 +23658,10 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).ready(function () {
     jquery__WEBPACK_IMPORTED_MODULE_0___default()(".header__logo").css("display", "block");
     jquery__WEBPACK_IMPORTED_MODULE_0___default()("#search").css("display", "block");
     jquery__WEBPACK_IMPORTED_MODULE_0___default()(".header__auth").css("justifyContent", "space-between");
-    jquery__WEBPACK_IMPORTED_MODULE_0___default()(".header__menu-desk").css("display", "block");
+
+    if (jquery__WEBPACK_IMPORTED_MODULE_0___default()(".header__link--desk").css("display") == "block") {
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()(".header__menu-desk").css("display", "block");
+    }
   });
   jquery__WEBPACK_IMPORTED_MODULE_0___default()('.services__slider').slick({
     dots: false,
@@ -23727,7 +23730,9 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).ready(function () {
   jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tires__btns').slick({
     dots: false,
     arrows: false,
-    slidesToShow: 2,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    infinite: true,
     responsive: [{
       breakpoint: 1280,
       settings: {

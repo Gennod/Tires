@@ -37,6 +37,18 @@
   &__text-wrapper--table {
     display: none;
   }
+  &__grid-top {
+    display: grid;
+    grid-template-columns: rem(288);
+    grid-template-rows: repeat(2, auto);
+    justify-content: center;
+  }
+  &__grid-bottom {
+    display: grid;
+    grid-template-columns: rem(288);
+    grid-template-rows: repeat(2, auto);
+    justify-content: center;
+  }
   &::before {
     @include pseudo;
     bottom: 0;
@@ -93,7 +105,7 @@
     &__text-wrapper--table {
       display: block;
       position: absolute;
-      top: rem(-46);
+      top: rem(-48);
       left: 50%;
       transform: translateX(-50%);
     }
@@ -106,6 +118,7 @@
     &__select {
       max-width: rem(184);
       cursor: default;
+      padding-left: rem(17);
     }
     &__grid-top {
       display: grid;
@@ -121,6 +134,7 @@
     }
     &__btn {
       max-width: rem(232);
+      margin-top: rem(7);
     }
     &::before {
       @include pseudo;
@@ -136,7 +150,8 @@
 
 @media (min-width: 1280px) {
   .choose {
-    padding-top: rem(20);
+    padding-top: 0;
+    padding-left: rem(89);
     &__text {
       display: inline;
     }
@@ -154,8 +169,13 @@
     &__btn {
       margin-top: 0;
     }
-    &__text-wrapper {
-      min-width: rem(638);
-  }
+    &__text-wrapper--table {
+      min-width: rem(640);
+      line-height: rem(32);
+      font-family: "IBM Medium";
+      top: rem(-60);
+      left: 50%;
+      font-size: rem($fz-secondary);
+    }
   }
 }
