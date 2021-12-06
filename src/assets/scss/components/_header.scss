@@ -230,6 +230,15 @@
                 background: url("../img/choose-img.png") center center/contain no-repeat;
             }
         }
+        &__grid-table {
+            padding: rem(32) rem(58) rem(48) rem(58);
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            column-gap: rem(132);
+            ul {
+                margin: 0;
+            }
+        }
         &__top {
             background-color: $black;
             padding: rem(15) rem(84) !important;
@@ -318,11 +327,17 @@
             }
             border: none;
         }
+        .medium-horizontal {
+            display: none !important;
+        }
     }
 }
 
 @media (min-width: 1280px) {
     .header {
+        .medium-horizontal {
+            display: flex !important;
+        }
         &__wrapper {
             background: url("../img/main-bg-desk.jpg") center center/cover no-repeat;
         }

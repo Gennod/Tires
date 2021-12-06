@@ -26,6 +26,15 @@
   }
 }
 
+
+@media (min-width: 816px) {
+  .about {
+    &__logo {
+      left: 25%;
+    }
+  }
+}
+
 @media (min-width: 768px) {
   .about {
     padding: rem(59) rem(84);
@@ -55,12 +64,17 @@
       text-align: left;
     }
     &__grid {
+      @include push--auto;
       display: grid;
       grid-template-columns: rem(600) auto;
       column-gap: rem(32);
+      max-width: rem(1252);
     }
     &__title {
       margin: 0;
+    }
+    &__logo {
+      left: rem(24);
     }
   }
 }

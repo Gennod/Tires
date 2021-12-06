@@ -53,7 +53,7 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 430px) {
   .footer {
     &__img {
       display: none;
@@ -64,6 +64,11 @@
       height: auto;
       margin-bottom: rem(24);
     }
+  }
+}
+
+@media (min-width: 768px) {
+  .footer {
     &__socials {
       margin-bottom: rem(27);
     }
@@ -76,6 +81,9 @@
     position: relative;
     &__img-table {
       display: none;
+    }
+    &__wrapper {
+      max-width: rem(1252);
     }
     &__img-desk {
       display: block;
@@ -119,5 +127,17 @@
       margin: 0;
       list-style: none;
     }
+  }
+}
+
+@media (min-width: 1620px) {
+  .footer {
+    &__right {
+      right: 10%;
+    }
+    &__left {
+      left: 10%;
+    }
+
   }
 }
