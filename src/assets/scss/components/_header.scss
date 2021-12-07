@@ -30,7 +30,8 @@
             transform: translateY(-50%);
             width: rem(16);
             height: rem(16);
-            background: url("../img/search-icon.svg") center center/contain no-repeat;
+            background: url("../img/search-icon.svg") center center/contain
+                no-repeat;
         }
         &--active {
             max-width: rem(230);
@@ -182,6 +183,9 @@
     &__input-find {
         cursor: pointer;
     }
+    &__grid-table {
+        display: none;
+    }
     .is-accordion-submenu-parent {
         a {
             position: relative;
@@ -192,7 +196,7 @@
             left: 50%;
             transform: translateX(-50%);
             height: rem(1);
-            width: rem(286);
+            width: 95%;
             background-color: $black-light;
         }
         a::after {
@@ -227,13 +231,14 @@
                 left: 0;
                 width: 100%;
                 height: rem(265);
-                background: url("../img/choose-img.png") center center/contain no-repeat;
+                background: url("../img/choose-img.png") center center/contain
+                    no-repeat;
             }
         }
         &__grid-table {
             padding: rem(32) rem(58) rem(48) rem(58);
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: 1fr;
             column-gap: rem(132);
             ul {
                 margin: 0;
@@ -258,6 +263,7 @@
             padding-top: rem(2);
         }
         &__menu {
+            position: relative;
             &::after {
                 @include pseudo;
                 bottom: -68%;
@@ -313,7 +319,8 @@
                 transform: translateY(-50%);
                 width: rem(16);
                 height: rem(16);
-                background: url("../img/search-icon.svg") center center/contain no-repeat;
+                background: url("../img/search-icon.svg") center center/contain
+                    no-repeat;
             }
             &--active {
                 max-width: rem(440);
@@ -321,14 +328,155 @@
             }
         }
         &__input {
-            &--active {
-                padding: rem(12) rem(80) rem(12) rem(48);
-                width: rem(440);
-            }
+            display: none !important;
+            padding: rem(12) rem(80) rem(12) rem(48);
+            width: rem(440);
             border: none;
+            &--active {
+                display: inline-block !important;
+            }
+        }
+        &__menu-mini {
+            top: rem(77);
+            padding: rem(0) 0 rem(48) 0;
+        }
+        &__left-name {
+            font-family: "IBM Medium";
+            font-size: rem($fz-title);
+            color: $primary-color;
+            margin-bottom: rem(16);
+            display: block;
+        }
+        &__list-link {
+            position: relative;
+            padding: rem(16) rem(15) rem(24) rem(120);
+            border-bottom: 1px solid $black-light;
+            &--first {
+                &:before {
+                    @include pseudo;
+                    left: 0;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    width: rem(96);
+                    height: rem(96);
+                    background: url("../img/header-icon-1.svg") center
+                        center/contain no-repeat;
+                }
+            }
+            &--second {
+                &:before {
+                    @include pseudo;
+                    left: 0;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    width: rem(96);
+                    height: rem(96);
+                    background: url("../img/header-icon-2.svg") center
+                        center/contain no-repeat;
+                }
+            }
+            &--third {
+                &:before {
+                    @include pseudo;
+                    left: 0;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    width: rem(96);
+                    height: rem(96);
+                    background: url("../img/header-icon-3.svg") center
+                        center/contain no-repeat;
+                }
+            }
+            &--fourth {
+                &:before {
+                    @include pseudo;
+                    left: 0;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    width: rem(96);
+                    height: rem(96);
+                    background: url("../img/header-icon-4.svg") center
+                        center/contain no-repeat;
+                }
+            }
+            &--fifth {
+                &:before {
+                    @include pseudo;
+                    left: 0;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    width: rem(96);
+                    height: rem(96);
+                    background: url("../img/header-icon-5.svg") center
+                        center/contain no-repeat;
+                }
+            }
+        }
+        &__left-descr {
+            display: flex;
+            color: $divide-gray;
+        }
+        &__link-type {
+            margin-right: rem(8);
+        }
+        &__left-about {
+            display: flex;
+            color: $divide-gray;
+        }
+        &__link-ver {
+            margin-right: rem(8);
+        }
+        &__right-list-link {
+            border-bottom: 1px solid $black-light;
+            a {
+                display: block;
+                padding: rem(12) rem(16);
+            }
+        }
+        &__left-link {
+            list-style: none;
+            margin: 0;
+            font-size: rem($fz-main);
+            padding-bottom: rem(20);
+        }
+        &__left-price {
+            position: relative;
+            padding-left: rem(24);
+            &:before {
+                @include pseudo;
+                left: 0;
+                top: 0;
+                transform: translateY(rem(3));
+                width: rem(14);
+                height: rem(14);
+                background: url("../img/header-price-icon.svg") center
+                    center/contain no-repeat;
+            }
+        }
+        &__left-time {
+            position: relative;
+            padding-left: rem(24);
+            line-height: rem(17);
+            margin-bottom: rem(11);
+            &:before {
+                @include pseudo;
+                left: 0;
+                top: rem(2);
+                width: rem(14);
+                height: rem(14);
+                background: url("../img/header-time-icon.svg") center center/contain
+                    no-repeat;
+            }
         }
         .medium-horizontal {
             display: none !important;
+        }
+        .accordion-content {
+            border: none !important;
+        }
+        .accordion-title {
+            border: none !important;
+            border-bottom: 1px solid $black-light !important;
         }
     }
 }
@@ -339,13 +487,15 @@
             display: flex !important;
         }
         &__wrapper {
-            background: url("../img/main-bg-desk.jpg") center center/cover no-repeat;
+            background: url("../img/main-bg-desk.jpg") center center/cover
+                no-repeat;
         }
         &__content {
             background: none;
             padding: rem(65) rem(70) rem(184) rem(607);
             &:after {
-                background: url("../img/choose-img-desk.png") center center/contain no-repeat;
+                background: url("../img/choose-img-desk.png") center
+                    center/cover no-repeat;
                 height: rem(200);
                 bottom: -30%;
             }
@@ -383,7 +533,8 @@
                 transform: translateY(-50%);
                 width: rem(16);
                 height: rem(16);
-                background: url("../img/arrow-down-icon-white.svg") center center/contain no-repeat;    
+                background: url("../img/arrow-down-icon-white.svg") center
+                    center/contain no-repeat;
             }
         }
         &__link {
@@ -397,8 +548,9 @@
         &__grid {
             padding: rem(32) rem(58) rem(48) rem(58);
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            column-gap: rem(132);
+            grid-template-columns: rem(600) rem(460);
+            column-gap: rem(125);
+            justify-content: center;
             ul {
                 margin: 0;
             }
@@ -411,11 +563,23 @@
         }
         &__left-descr {
             @include dflex;
-            justify-content: space-between;
         }
         &__left-about {
             @include dflex;
-            justify-content: space-between;
+        }
+        &__left-type {
+            margin-right: rem(8);
+            font-size: rem($fz-main);
+            color: $divide-gray;
+        }
+        &__left-ver {
+            margin-right: rem(8);
+        }
+        &__right-link {
+            padding: rem(12) rem(16);
+            border-bottom: 1px solid $black-light;
+            font-size: rem($fz-medium);
+            font-family: "IBM Medium";
         }
         &__left-item {
             border-bottom: 1px solid $black-light;
@@ -433,6 +597,104 @@
             font-size: rem($fz-medium);
             padding-left: 0;
         }
+        &__menu-big {
+            top: rem(77);
+            padding-top: 0;
+        }
+        &__right-list {
+            padding-top: rem(30);
+        }
+        &__left-desk-price {
+            position: relative;
+            padding-left: rem(24);
+            &:before {
+                @include pseudo;
+                left: 0;
+                top: 0;
+                transform: translateY(rem(3));
+                width: rem(14);
+                height: rem(14);
+                background: url("../img/header-price-icon.svg") center
+                    center/contain no-repeat;
+            }
+        }
+        &__left-desk-time {
+            position: relative;
+            padding-left: rem(24);
+            line-height: rem(17);
+            margin-bottom: rem(11);
+            &:before {
+                @include pseudo;
+                left: 0;
+                top: rem(2);
+                width: rem(14);
+                height: rem(14);
+                background: url("../img/header-time-icon.svg") center center/contain
+                    no-repeat;
+            }
+        }
+        &__left-item {
+            position: relative;
+            &--first {
+                &:before {
+                    @include pseudo;
+                    left: 0;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    width: rem(96);
+                    height: rem(96);
+                    background: url("../img/header-icon-1.svg") center
+                        center/contain no-repeat;
+                }
+            }
+            &--second {
+                &:before {
+                    @include pseudo;
+                    left: 0;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    width: rem(96);
+                    height: rem(96);
+                    background: url("../img/header-icon-2.svg") center
+                        center/contain no-repeat;
+                }
+            }
+            &--third {
+                &:before {
+                    @include pseudo;
+                    left: 0;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    width: rem(96);
+                    height: rem(96);
+                    background: url("../img/header-icon-3.svg") center
+                        center/contain no-repeat;
+                }
+            }
+            &--fourth {
+                &:before {
+                    @include pseudo;
+                    left: 0;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    width: rem(96);
+                    height: rem(96);
+                    background: url("../img/header-icon-4.svg") center
+                        center/contain no-repeat;
+                }
+            }
+            &--fifth {
+                &:before {
+                    @include pseudo;
+                    left: 0;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    width: rem(96);
+                    height: rem(96);
+                    background: url("../img/header-icon-5.svg") center
+                        center/contain no-repeat;
+                }
+            }
+        }
     }
-
 }
