@@ -96,15 +96,6 @@ $(document).ready(function () {
       
     });
 
-    $(".my-rating").starRating({
-        initialRating: 4.5,
-        strokeColor: "#EFD8C3",
-        ratedColor: "#EFD8C3",
-        strokeWidth: 50,
-        starSize: 16,
-        emptyColor: "#fff",
-    });
-
     $(".disks__card-btn--like").on("click", (e) => {
         e.currentTarget.classList.toggle("tires__card-btn--active");
     });
@@ -254,6 +245,29 @@ $(document).ready(function () {
             },
         ],
     });
+
+    $(".my-rating").starRating({
+        initialRating: 4.5,
+        strokeColor: "#EFD8C3",
+        ratedColor: "#EFD8C3",
+        strokeWidth: 50,
+        starSize: 16,
+        emptyColor: "#fff",
+        totalStars: 5,
+        useFullStars: false,
+        starShape: "straight",
+        hoverColor: "gold",
+        activeColor: "gold",
+        useGradient: true,
+        readOnly: false,
+        disableAfterRate: false,
+        baseUrl: false,
+        starGradient: {
+            start: "#EFD8C3",
+            end: "#EFD8C3",
+        },
+    });
+
 });
 
 (function ($, window, document, undefined) {
@@ -268,11 +282,11 @@ $(document).ready(function () {
         starShape: "straight",
         emptyColor: "lightgray",
         hoverColor: "gold",
-        activeColor: "#EFD8C3",
+        activeColor: "gold",
         ratedColor: "#EFD8C3",
         useGradient: true,
         readOnly: false,
-        disableAfterRate: true,
+        disableAfterRate: false,
         baseUrl: false,
         starGradient: {
             start: "#EFD8C3",
