@@ -1,7 +1,6 @@
 <header class="header">
     <div class="header__top-wrapper">
         <div class="header__top">
-        
             <ul class="header__menu menu icons icon-left">
                 <div class="header__input-wrapper">
                     <input class="header__input" type="text" placeholder="Введите название товара или услуги">
@@ -52,7 +51,7 @@
                             </svg>
                         </div>
                     </button>
-                    <button class="header__link header__link--desk">
+                    <button class="header__link header__link--desk" id="ui">
                         <div class="header__icon">
                             Личный кабинет
                             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -408,6 +407,31 @@
                             <li class="header__right-link"><a href="#">Возврат товара</a></li>
                             <li class="header__right-link"><a href="#">Подарочные сертифиакты</a></li>
                         </ul>
+                    </div>
+                </div>
+             </div>
+             <div class="header__menu-big header__menu-big--auth">
+                <div class="header__grid header__grid--auth">
+                    <div class="header__left">
+                        <p class="header__in">Вход</p>
+                        <form class="header__form">
+                            <input type="text" placeholder="Ваш телефон">
+                            <button class="header__button button">Получить код</button>
+                        </form>
+                    </div>
+                    <div class="header__right">
+                        <p class="header__in">Регистрация</p>
+                        <form class="header__form">
+                            <input type="text" placeholder="Ваш телефон">
+                            <button class="header__button button alt">Получить код</button>
+                            
+                        </form>
+                        <fieldset class="header__agree large-7 cell">
+                            <input id="agree" type="checkbox"><label class="header__label" for="agree">
+                                Я подтверждаю свою дееспособность, даю согласие на получение 
+    информации о статусе заказов и на обработку <span>персональных данных.</span>
+                            </label>
+                        </fieldset>
                     </div>
                 </div>
              </div>

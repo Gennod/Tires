@@ -93,8 +93,11 @@ $(document).ready(function () {
         $(".header__menu-big--company").slideToggle("slow");
         $(".header__menu-big--company").addClass("header__menu-big--active");
       }
-      
     });
+    $("#ui").on("click", () => {
+        $(".header__menu-big--auth").slideToggle("slow");
+        $(".header__menu-big--company").addClass("header__menu-big--active");
+      });
 
     $(".disks__card-btn--like").on("click", (e) => {
         e.currentTarget.classList.toggle("tires__card-btn--active");
