@@ -1,0 +1,1032 @@
+
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tires</title>
+    <link rel="stylesheet" href="assets/css/app.css">
+  </head>
+<body>
+
+<header class="header">
+    <div class="header__top-wrapper">
+        <div class="header__top">
+            <ul class="header__menu menu icons icon-left">
+                <div class="header__input-wrapper">
+                    <input class="header__input" type="text" placeholder="Введите название товара или услуги">
+                    <button class="header__input-find">Найти</butt>
+                    <button class="header__cross">&times;</button>
+                </div>
+                <li class="header__burger">
+                    <button class="header__link" id="menu">
+                        <div class="header__icon">
+                            <svg fill="white" width="16" height="10" viewBox="0 0 16 10" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M16 0H0V1H16V0ZM13 3H0V4H13V3ZM0 6H13V7H0V6ZM16 9H0V10H16V9Z" />
+                            </svg>
+                        </div>
+                        <div class="header__icon-cross">
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M7 7.72222L13.2778 14L14 13.2778L7.72222 7L14 0.722217L13.2778 0L7 6.27778L0.722216 0L0 0.722217L6.27778 7L0 13.2778L0.722216 14L7 7.72222Z"
+                                    fill="#FF7E00" />
+                            </svg>
+                        </div>
+                        <span class="header__menu-name">Меню</span>
+                    </button>
+                </li>
+                <li class="header__menu-desk">
+                    <ul class="vertical medium-horizontal menu" data-responsive-menu="accordion medium-dropdown">
+                        <li class="header__menu-item-desk" id="products">
+                            <a href="#">Товары</a>
+                        </li>
+                        <li class="header__menu-item-desk" id="services">
+                            <a href="#">Услуги</a>
+                            
+                        </li>
+                        <li class="header__menu-item-desk" id="company">
+                            <a href="#">Компания</a>
+                        </li>
+                    </ul>
+                </li>
+                <a href="/"><img class="header__logo" width="32" height="32" src="./assets/img/main-logo-icon.svg"
+                        alt="main-logo" /></a>
+                <li class="header__auth">
+                    <button class="header__link" id="search">
+                        <div class="header__icon">
+                            <svg width="13" height="17" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M10 5.5C10 7.98528 7.98528 10 5.5 10C3.01472 10 1 7.98528 1 5.5C1 3.01472 3.01472 1 5.5 1C7.98528 1 10 3.01472 10 5.5ZM9.01953 9.72663C8.06578 10.5217 6.83875 11 5.5 11C2.46243 11 0 8.53757 0 5.5C0 2.46243 2.46243 0 5.5 0C8.53757 0 11 2.46243 11 5.5C11 6.83875 10.5217 8.06578 9.72663 9.01953L12.3536 11.6464L11.6464 12.3536L9.01953 9.72663Z"
+                                    fill="white" />
+                            </svg>
+                        </div>
+                    </button>
+                    <button class="header__link header__link--desk" id="ui">
+                        <div class="header__icon">
+                            Личный кабинет
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M3 7.72499L3.54236 7L8 9.91976L12.4576 7L13 7.72499L8 11L3 7.72499Z" fill="white"/>
+                                </svg>
+                        </div>
+                    </button>
+                    <button class="header__link header__link--desk">
+                        <div class="header__icon">
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.44691 2.22421L7.44705 2.22393L7.44724 2.22358L7.4529 2.21283C7.45854 2.20225 7.46791 2.18503 7.481 2.16213C7.50721 2.11627 7.54808 2.04801 7.60353 1.96485C7.71498 1.79768 7.88216 1.57495 8.10355 1.35355C8.54906 0.908051 9.17938 0.5 10 0.5C10.9257 0.5 11.7979 0.732398 12.4299 1.25911C13.0459 1.77246 13.5 2.62024 13.5 4C13.5 6.71736 12.1976 9.53246 7 13.3799C1.80237 9.53246 0.5 6.71736 0.5 4C0.5 2.62024 0.954078 1.77246 1.57009 1.25911C2.20215 0.732398 3.07429 0.5 4 0.5C4.82062 0.5 5.45095 0.908051 5.89645 1.35355C6.11784 1.57495 6.28503 1.79768 6.39648 1.96485C6.45192 2.04801 6.4928 2.11627 6.51901 2.16213C6.53209 2.18503 6.54146 2.20225 6.54711 2.21283L6.55276 2.22358L6.55309 2.22422L6.55331 2.22465L6.55334 2.2247L6.55348 2.22498L7 3.11803L7.44652 2.22498L7.44667 2.2247L7.44669 2.22465L7.44691 2.22421Z" stroke="white"/>
+                                </svg>
+                                
+                        </div>
+                    </button>
+                    <button class="header__link header__link--desk">
+                        <div class="header__icon">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10 5.5H1.5L3.5 11.5H10.5L12.5 2.5H15" stroke="white"/>
+                                <rect x="4" y="13" width="2" height="2" rx="1" fill="white"/>
+                                <rect x="8" y="13" width="2" height="2" rx="1" fill="white"/>
+                                </svg>
+                                
+                        </div>
+                    </button>
+                    <button id="log" class="header__link header__link--visible">
+                        <div class="header__icon">
+                            <svg width="12" height="16" viewBox="0 0 12 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M9 3.85714C9 4.67992 8.63872 5.76733 8.01307 6.64846C7.37486 7.54727 6.63757 8 6 8C5.36243 8 4.62514 7.54727 3.98693 6.64846C3.36128 5.76733 3 4.67992 3 3.85714C3 2.31315 4.30856 1 6 1C7.69144 1 9 2.31315 9 3.85714ZM10 3.85714C10 5.98738 8.20914 9 6 9C3.79086 9 2 5.98738 2 3.85714C2 1.7269 3.79086 0 6 0C8.20914 0 10 1.7269 10 3.85714ZM6 10C4.99425 10 4.12139 10.0311 3.38164 10.1379C2.64288 10.2447 2.00141 10.4315 1.47962 10.7669C0.384099 11.4712 0 12.6989 0 14.5V14.7676L0.22265 14.916L0.5 14.5C0.22265 14.916 0.222906 14.9162 0.223167 14.9164L0.22372 14.9167L0.22493 14.9175L0.22777 14.9194L0.235145 14.9242L0.256745 14.9377C0.274221 14.9484 0.29788 14.9624 0.327964 14.9792C0.388141 15.0129 0.473959 15.0579 0.587346 15.1102C0.814195 15.2149 1.15085 15.3488 1.61264 15.4808C2.53648 15.7447 3.95809 16 6 16C8.04191 16 9.46352 15.7447 10.3874 15.4808C10.8492 15.3488 11.1858 15.2149 11.4127 15.1102C11.526 15.0579 11.6119 15.0129 11.672 14.9792C11.7021 14.9624 11.7258 14.9484 11.7433 14.9377L11.7649 14.9242L11.7722 14.9194L11.7751 14.9175L11.7763 14.9167L11.7768 14.9164C11.7771 14.9162 11.7774 14.916 11.5 14.5L11.7774 14.916L12 14.7676V14.5C12 12.6989 11.6159 11.4712 10.5204 10.7669C9.99859 10.4315 9.35712 10.2447 8.61836 10.1379C7.87861 10.0311 7.00575 10 6 10ZM1.0064 14.2023L1.00402 14.2012C1.04542 12.7088 1.40557 12.0033 2.02038 11.6081C2.37359 11.381 2.85712 11.2241 3.52461 11.1277C4.19111 11.0314 5.00575 11 6 11C6.99425 11 7.80889 11.0314 8.4754 11.1277C9.14288 11.2241 9.62641 11.381 9.97962 11.6081C10.5944 12.0033 10.9546 12.7088 10.996 14.2012L10.9936 14.2023C10.8142 14.2851 10.5258 14.4012 10.1126 14.5192C9.28648 14.7553 7.95809 15 6 15C4.04191 15 2.71352 14.7553 1.88736 14.5192C1.47415 14.4012 1.18581 14.2851 1.0064 14.2023Z"
+                                    fill="white" />
+                            </svg>
+                        </div>
+                    </button>
+                </li>
+            </ul>
+            <div class="header__menu-mini">
+                <div class="header__grid-table">
+                    <div class="header__left">
+                        <ul class="accordion" data-accordion data-allow-all-closed="true" data-accordion data-deep-link="true" data-update-history="true" data-deep-link-smudge="true" data-deep-link-smudge-delay="500" id="deeplinked-accordion">
+                            <li class="accordion-item" data-accordion-item>
+                              <a href="#" class="accordion-title">Товары</a>
+                              <div class="accordion-content" data-tab-content id="deeplink1">
+                                <ul class="header__list">
+                                    <li class="header__list-link header__list-link--first">
+                                        <a class="header__left-name" href="#">Автомобильные шины</a>
+                                        <ul class="header__left-descr">
+                                            <li class="header__link-type"><a href="#">Летние</a></li>
+                                            <li class="header__link-type"><a href="#">Зимние</a></li>
+                                            <li class="header__link-type"><a href="#">Шипованые</a></li>
+                                            <li class="header__link-type"><a href="#">Фрикционные</a></li>
+                                            <li class="header__link-type"><a href="#">Б/у</a></li>
+                                        </ul>
+                                        <ul class="header__left-about">
+                                            <li class="header__link-ver"><a href="#">R13</a></li>
+                                            <li class="header__link-ver"><a href="#">R14</a></li>
+                                            <li class="header__link-ver"><a href="#">R15</a></li>
+                                            <li class="header__link-ver"><a href="#">R16</a></li>
+                                            <li class="header__link-ver"><a href="#">R17</a></li>
+                                            <li class="header__link-ver"><a href="#">R18</a></li>
+                                            <li class="header__link-ver"><a href="#">R19</a></li>
+                                            <li class="header__link-ver"><a href="#">R20</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="header__list-link header__list-link--second">
+                                        <a class="header__left-name" href="#">Грузовые шины</a>
+                                        <ul class="header__left-descr">
+                                            <li class="header__link-type"><a href="#">Ведущие</a></li>
+                                            <li class="header__link-type"><a href="#">Универсальные</a></li>
+                                            <li class="header__link-type"><a href="#">Рулевые</a></li>
+                                            <li class="header__link-type"><a href="#">Прицеп</a></li>
+                                            <li class="header__link-type"><a href="#">Рулевые + прицеп</a></li>
+                                        </ul>
+                                        <ul class="header__left-about">
+                                            <li class="header__link-ver"><a href="#">R22,5</a></li>
+                                            <li class="header__link-ver"><a href="#">R24</a></li>
+                                            <li class="header__link-ver"><a href="#">R21</a></li>
+                                            <li class="header__link-ver"><a href="#">R20</a></li>
+                                            <li class="header__link-ver"><a href="#">R19,5</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="header__list-link header__list-link--third">
+                                        <a class="header__left-name" href="#">Мотошины</a>
+                                        <ul class="header__left-descr">
+                                            <li class="header__link-type"><a href="#">Спорт</a></li>
+                                            <li class="header__link-type"><a href="#">Спорт-турист</a></li>
+                                            <li class="header__link-type"><a href="#">Чоппер/круйзер</a></li>
+                                            <li class="header__link-type"><a href="#">Эндуро</a></li>
+                                            <li class="header__link-type"><a href="#">Классика</a></li>
+                                        </ul>
+                                        <ul class="header__left-about">
+                                            <li class="header__link-ver"><a href="#">R12</a></li>
+                                            <li class="header__link-ver"><a href="#">R13</a></li>
+                                            <li class="header__link-ver"><a href="#">R14</a></li>
+                                            <li class="header__link-ver"><a href="#">R15</a></li>
+                                            <li class="header__link-ver"><a href="#">R16</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <ul class="header__right-list">
+                                    <li class="header__right-list-link"><a href="#">Аксессуары для шин, дисков и шиномонтажа</a></li>
+                                    <li class="header__right-list-link"><a href="#">Аккумуляторы</a></li>
+                                    <li class="header__right-list-link"><a href="#">Автомасла</a></li>
+                                    <li class="header__right-list-link"><a href="#">Автоэлектроника</a></li>
+                                    <li class="header__right-list-link"><a href="#">Автохимия и автокосметика</a></li>
+                                    <li class="header__right-list-link"><a href="#">Внешний декор, тюнинг, защита</a></li>
+                                    <li class="header__right-list-link"><a href="#">Инструменты и техническая помощь</a></li>
+                                    <li class="header__right-list-link"><a href="#">Компрессоры</a></li>
+                                </ul>
+                              </div>
+                            </li>
+                            <li class="accordion-item" data-accordion-item>
+                                <a href="#" class="accordion-title">Услуги</a>
+                                <div class="accordion-content" data-tab-content id="deeplink2">
+                                    <ul class="header__list">
+                                        <li class="header__list-link header__list-link--fourth">
+                                            <a class="header__left-name" href="#">Шиномонтаж</a>
+                                            <ul class="header__left-list">
+                                                <li class="header__left-time">
+                
+                                                    Ежедневно с 9:00 до 21:00, без перерывов
+                                                </li>
+                                                <li class="header__left-price">
+                                                    
+                                                    от 500 ₽
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="header__list-link header__list-link--fifth">
+                                            <a class="header__left-name" href="#">Ремонт и правка дисков</a>
+                                            <ul class="header__left-list">
+                                                <li class="header__left-time">
+                
+                                                    Ежедневно с 9:00 до 21:00, без перерывов
+                                                </li>
+                                                <li class="header__left-price">
+                                                    
+                                                    от 500 ₽
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        
+                                    </ul>
+                                    <ul class="header__right-list">
+                                        <li class="header__right-list-link"><a href="#">Ошиповка зимних шин</a></li>
+                                        <li class="header__right-list-link"><a href="#">Сезонное хранение шин</a></li>
+                                        <li class="header__right-list-link"><a href="#">Сход развал</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="accordion-item" data-accordion-item>
+                              <a href="#" class="accordion-title">Компания</a>
+                              <div class="accordion-content" data-tab-content id="deeplink3">
+                                <ul class="header__right-list">
+                                    <li class="header__right-list-link"><a href="#">О компании</a></li>
+                                    <li class="header__right-list-link"><a href="#">Контакты</a></li>
+                                    <li class="header__right-list-link"><a href="#">Статьи и новости</a></li>
+                                    <li class="header__right-list-link"><a href="#">Акции и скидки</a></li>
+                                    <li class="header__right-list-link"><a href="#">Доставка</a></li>
+                                    <li class="header__right-list-link"><a href="#">Оптовым клиентам</a></li>
+                                    <li class="header__right-list-link"><a href="#">Оплата</a></li>
+                                    <li class="header__right-list-link"><a href="#">Кредит</a></li>
+                                    <li class="header__right-list-link"><a href="#">Гарантия</a></li>
+                                    <li class="header__right-list-link"><a href="#">Возврат товара</a></li>
+                                    <li class="header__right-list-link"><a href="#">Подарочные сертифиакты</a></li>
+                                </ul>
+                              </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <ul class="vertical medium-horizontal menu" data-responsive-menu="accordion medium-dropdown">
+                    <li>
+                        <a href="#">Товары</a>
+                        <ul class="vertical menu">
+                            <li><a href="#">Автомобильные шины</a></li>
+                            <li><a href="#">Грузовые шины</a></li>
+                            <li><a href="#">Мотошины</a></li>
+                            <li>
+                                <a href="#">Аксессуары для шин, дисков и шиномонтажа</a>
+                            </li>
+                            <li><a href="#">Аккумуляторы</a></li>
+                            <li><a href="#">Автомасла</a></li>
+                            <li><a href="#">Автомасла</a></li>
+                            <li><a href="#">Автохимия и автокосметика</a></li>
+                            <li><a href="#">Внешний декор, тюнинг, защита</a></li>
+                            <li>
+                                <a href="#">Инструменты и техническая помощь</a>
+                            </li>
+                            <li><a href="#">Компрессоры</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Услуги</a>
+                        <ul class="vertical menu">
+                            <li><a href="#">Шиномонтаж</a></li>
+                            <li><a href="#">Ремонт и правка дисков</a></li>
+                            <li><a href="#">Ошиповка зимних шин</a></li>
+                            <li><a href="#">Сезонное хранение шин</a></li>
+                            <li><a href="#">Сход развал</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Компания</a>
+                        <ul class="vertical menu">
+                            <li><a href="#">О компании</a></li>
+                            <li><a href="#">Контакты</a></li>
+                            <li><a href="#">Статьи и новости</a></li>
+                            <li><a href="#">Акции и скидки</a></li>
+                            <li><a href="#">Доставка</a></li>
+                            <li><a href="#">Оптовым клиентам</a></li>
+                            <li><a href="#">Оплата</a></li>
+                            <li><a href="#">Кредит</a></li>
+                            <li><a href="#">Гарантия</a></li>
+                            <li><a href="#">Возврат товара</a></li>
+                            <li><a href="#">Подарочные сертифиакты</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="header__menu-big header__menu-big--products">
+               <div class="header__grid">
+                   <div class="header__left">
+                       <ul class="header__left-list">
+                           <li class="header__left-item header__left-item--first">
+                               <a class="header__left-name" href="#">Автомобильные шины</a>
+                               <ul class="header__left-descr">
+                                   <li class="header__left-type"><a href="#">Летние</a></li>
+                                   <li class="header__left-type"><a href="#">Зимние</a></li>
+                                   <li class="header__left-type"><a href="#">Шипованые</a></li>
+                                   <li class="header__left-type"><a href="#">Фрикционные</a></li>
+                                   <li class="header__left-type"><a href="#">Б/у</a></li>
+                               </ul>
+                               <ul class="header__left-about">
+                                   <li class="header__left-ver"><a href="#">R13</a></li>
+                                   <li class="header__left-ver"><a href="#">R14</a></li>
+                                   <li class="header__left-ver"><a href="#">R15</a></li>
+                                   <li class="header__left-ver"><a href="#">R16</a></li>
+                                   <li class="header__left-ver"><a href="#">R17</a></li>
+                                   <li class="header__left-ver"><a href="#">R18</a></li>
+                                   <li class="header__left-ver"><a href="#">R19</a></li>
+                                   <li class="header__left-ver"><a href="#">R20</a></li>
+                               </ul>
+                           </li>
+                           <li class="header__left-item header__left-item--second">
+                            <a class="header__left-name" href="#">Грузовые шины</a>
+                            <ul class="header__left-descr">
+                                <li class="header__left-type"><a href="#">Ведущие</a></li>
+                                <li class="header__left-type"><a href="#">Универсальные</a></li>
+                                <li class="header__left-type"><a href="#">Рулевые</a></li>
+                                <li class="header__left-type"><a href="#">Прицеп</a></li>
+                                <li class="header__left-type"><a href="#">Рулевые + прицеп</a></li>
+                            </ul>
+                            <ul class="header__left-about">
+                                <li class="header__left-ver"><a href="#">R22,5</a></li>
+                                <li class="header__left-ver"><a href="#">R24</a></li>
+                                <li class="header__left-ver"><a href="#">R21</a></li>
+                                <li class="header__left-ver"><a href="#">R20</a></li>
+                                <li class="header__left-ver"><a href="#">R19,5</a></li>
+                            </ul>
+                        </li>
+                        <li class="header__left-item header__left-item--third">
+                            <a class="header__left-name" href="#">Мотошины</a>
+                            <ul class="header__left-descr">
+                                <li class="header__left-type"><a href="#">Спорт</a></li>
+                                <li class="header__left-type"><a href="#">Спорт-турист</a></li>
+                                <li class="header__left-type"><a href="#">Чоппер/круйзер</a></li>
+                                <li class="header__left-type"><a href="#">Эндуро</a></li>
+                                <li class="header__left-type"><a href="#">Классика</a></li>
+                            </ul>
+                            <ul class="header__left-about">
+                                <li class="header__left-ver"><a href="#">R12</a></li>
+                                <li class="header__left-ver"><a href="#">R13</a></li>
+                                <li class="header__left-ver"><a href="#">R14</a></li>
+                                <li class="header__left-ver"><a href="#">R15</a></li>
+                                <li class="header__left-ver"><a href="#">R16</a></li>
+                            </ul>
+                        </li>
+                       </ul>
+                   </div>
+                   <div class="header__right">
+                       <ul class="header__right-list">
+                           <li class="header__right-link"><a href="#">Аксессуары для шин, дисков и шиномонтажа</a></li>
+                           <li class="header__right-link"><a href="#">Аккумуляторы</a></li>
+                           <li class="header__right-link"><a href="#">Автомасла</a></li>
+                           <li class="header__right-link"><a href="#">Автоэлектроника</a></li>
+                           <li class="header__right-link"><a href="#">Автохимия и автокосметика</a></li>
+                           <li class="header__right-link"><a href="#">Внешний декор, тюнинг, защита</a></li>
+                           <li class="header__right-link"><a href="#">Инструменты и техническая помощь</a></li>
+                           <li class="header__right-link"><a href="#">Компрессоры</a></li>
+                       </ul>
+                   </div>
+               </div>
+            </div>
+            <div class="header__menu-big header__menu-big--services">
+                <div class="header__grid">
+                    <div class="header__left">
+                        <ul class="header__left-list">
+                            <li class="header__left-item header__left-item--third">
+                                <a class="header__left-name" href="#">Шиномонтаж</a>
+                                <ul class="header__left-desk-list">
+                                    <li class="header__left-desk-time">
+    
+                                        Ежедневно с 9:00 до 21:00, без перерывов
+                                    </li>
+                                    <li class="header__left-desk-price">
+                                        
+                                        от 500 ₽
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="header__left-item header__left-item--fourth">
+                             <a class="header__left-name" href="#">Ремонт и правка дисков</a>
+                             <ul class="header__left-desk-list">
+                                <li class="header__left-desk-time">
+
+                                    Ежедневно с 9:00 до 21:00, без перерывов
+                                </li>
+                                <li class="header__left-desk-price">
+                                    
+                                    от 500 ₽
+                                </li>
+                            </ul>
+                         </li>
+                        </ul>
+                    </div>
+                    <div class="header__right">
+                        <ul class="header__right-list">
+                            <li class="header__right-link"><a href="#">Ошиповка зимних шин</a></li>
+                            <li class="header__right-link"><a href="#">Сезонное хранение шин</a></li>
+                            <li class="header__right-link"><a href="#">Сход развал</a></li>
+                        </ul>
+                    </div>
+                </div>
+             </div>
+             <div class="header__menu-big header__menu-big--company">
+                <div class="header__grid header__grid--company">
+                    <div class="header__left">
+                        <ul class="header__right-list">
+                            <li class="header__right-link"><a href="#">О компании</a></li>
+                            <li class="header__right-link"><a href="#">Контакты</a></li>
+                            <li class="header__right-link"><a href="#">Статьи и новости</a></li>
+                            <li class="header__right-link"><a href="#">Акции и скидки</a></li>
+                            <li class="header__right-link"><a href="#">Доставка</a></li>
+                            <li class="header__right-link"><a href="#">Оптовым клиентам</a></li>
+                        </ul>
+                    </div>
+                    <div class="header__right">
+                        <ul class="header__right-list">
+                            <li class="header__right-link"><a href="#">Оплата</a></li>
+                            <li class="header__right-link"><a href="#">Кредит</a></li>
+                            <li class="header__right-link"><a href="#">Гарантия</a></li>
+                            <li class="header__right-link"><a href="#">Возврат товара</a></li>
+                            <li class="header__right-link"><a href="#">Подарочные сертифиакты</a></li>
+                        </ul>
+                    </div>
+                </div>
+             </div>
+             <div class="header__menu-big header__menu-big--auth">
+                <div class="header__grid header__grid--auth">
+                    <div class="header__left">
+                        <p class="header__in">Вход</p>
+                        <form class="header__form">
+                            <input type="text" placeholder="Ваш телефон">
+                            <button class="header__button button">Получить код</button>
+                        </form>
+                    </div>
+                    <div class="header__right">
+                        <p class="header__in">Регистрация</p>
+                        <form class="header__form">
+                            <input type="text" placeholder="Ваш телефон">
+                            <button class="header__button button alt">Получить код</button>
+                            
+                        </form>
+                        <fieldset class="header__agree large-7 cell">
+                            <input id="agree" type="checkbox"><label class="header__label" for="agree">
+                                Я подтверждаю свою дееспособность, даю согласие на получение 
+    информации о статусе заказов и на обработку <span>персональных данных.</span>
+                            </label>
+                        </fieldset>
+                    </div>
+                </div>
+             </div>
+        </div>
+    </div>
+    <div class="header__wrapper">
+        <div class="header__content">
+            <h1 class="header__title-tag">
+                <div class="header__title-wrapper header__title-wrapper--mobile">
+                    <span class="header__title">Шиномонтаж</span><br>
+                    <span class="header__title header__title--large">и доставка бесплатно</span>
+                </div>
+                <div class="header__title-wrapper header__title-wrapper--table">
+                    <span class="header__title">Шиномонтаж и доставка</span><br>
+                    <span class="header__title">бесплатно</span>
+                </div>
+            </h1>
+            <button class="header__btn button alt">Подробнее</button>
+        </div>
+    </div>
+    
+</header>
+<main>
+    <section class="choose">
+        <div class="choose__text-wrapper choose__text-wrapper--table">
+            <p class="choose__text">Подберём <span class="choose__style choose__style--underline">
+                шины
+            </span> или <span class="choose__style choose__style--underline-dashed">диски</span></p>
+            <p class="choose__text">
+                по <span class="choose__style choose__style--underline">
+                    марке автомобиля
+                </span> или <span class="choose__style choose__style--underline-dashed">параметрам товара</span></p>
+        </div>
+        <label class="choose__label">
+            <div class="choose__title">Подберём</div>
+            <select class="choose__select">
+                <option value="tires">Шины</option>
+                <option value="tires2">Шины2</option>
+                <option value="tires3">Шины3</option>
+                <option value="tires4">Шины4</option>
+            </select>
+        </label>
+
+        <label class="choose__label choose__label--flex">
+            <span class="choose__title choose__title--secondary">по</span>
+            <select class="choose__select choose__select--inline">
+                <option value="brand1">марке автомобиля</option>
+                <option value="brand2">марке2 автомобиля</option>
+                <option value="brand3">марке3 автомобиля</option>
+                <option value="brand4">марке4 автомобиля</option>
+            </select>
+        </label>
+        <label class="choose__inputs">
+            <div class="choose__grid-top">
+                <select class="choose__select">
+                    <option value="prod">Производитель</option>
+                    <option value="prod1">Производитель1</option>
+                    <option value="prod2">Производитель2</option>
+                    <option value="prod3">Производитель3</option>
+                </select>
+                <select class="choose__select choose__select--disabled" disabled>
+                    <option value="model1">Модель</option>
+                    <option value="model2">Производитель2</option>
+                    <option value="model3">Производитель3</option>
+                    <option value="model4">Производитель4</option>
+                </select>
+                <select class="choose__select choose__select--disabled" disabled>
+                    <option value="gen1">Поколение</option>
+                    <option value="gen2">Производитель2</option>
+                    <option value="gen3">Производитель3</option>
+                    <option value="gen4">Производитель4</option>
+                </select>
+            </div>
+            <div class="choose__grid-bottom">
+                <select class="choose__select choose__select--disabled" disabled>
+                    <option value="mod1">Модификация</option>
+                    <option value="mod2">Производитель2</option>
+                    <option value="mod3">Производитель3</option>
+                    <option value="mod4">Производитель4</option>
+                </select>
+                <select class="choose__select choose__select--disabled" disabled>
+                    <option value="carcase">Кузов</option>
+                    <option value="carcase2">Производитель2</option>
+                    <option value="carcase3">Производитель3</option>
+                    <option value="carcase4">Производитель4</option>
+                </select>
+            </div>
+        </label>
+        <button href="#" class="choose__btn button expanded">Подобрать</button>
+    </section>
+    <section class="services">
+        <h2 class="services__title">Популярные услуги</h2>
+        <div class="services__slider">
+            <div class="services__card card">
+                <img src="./assets/img/services-img-1.jpg" alt="services-img-1">
+                <div class="services__card-section card-section">
+                    <div class="services__card-content">
+                        <img width="286" height="104" class="services__block" src="./assets/img/img-union.png"
+                            alt="services-img-union">
+                        <div class="services__wrapper">
+                            <h3 class="services__subtitle">Шиномонтаж</h3>
+                            <ul class="services__list">
+                                <li class="services__time">
+
+                                    Ежедневно с 9:00 до 21:00, без перерывов
+                                </li>
+                                <li class="services__price">
+                                    
+                                    от 500 ₽
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="services__card card">
+                <img src="./assets/img/services-img-2.jpg" alt="services-img-2">
+                <div class="services__card-section card-section">
+                    <div class="services__card-content">
+                        <img width="286" height="104" class="services__block" src="./assets/img/img-union.png"
+                            alt="services-img-union">
+                        <div class="services__wrapper">
+                            <h3 class="services__subtitle">Шиномонтаж</h3>
+                            <ul class="services__list">
+                                <li class="services__time">
+
+                                    Ежедневно с 9:00 до 21:00, без перерывов
+                                </li>
+                                <li class="services__price">
+                                    
+                                    от 500 ₽
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="services__card card">
+                <img src="./assets/img/services-img-3.jpg" alt="services-img-3">
+                <div class="services__card-section card-section">
+                    <div class="services__card-content">
+                        <img width="286" height="104" class="services__block" src="./assets/img/img-union.png"
+                            alt="services-img-union">
+                        <div class="services__wrapper">
+                            <h3 class="services__subtitle">Шиномонтаж</h3>
+                            <ul class="services__list">
+                                <li class="services__time">
+
+                                    Ежедневно с 9:00 до 21:00, без перерывов
+                                </li>
+                                <li class="services__price">
+                                    
+                                    от 500 ₽
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="services__btn button alt" href="#">Посмотреть все услуги</button>
+    </section>
+    <section class="tires">
+        <h2 class="tires__title">Популярные шины</h2>
+        <div class="tires__btns button-group no-gaps">
+            <button class="tires__btn tires__btn--active">Автомобильные</button>
+            <button class="tires__btn">Грузовые</button>
+            <button class="tires__btn">Мотошины</button>
+        </div>
+        <div class="tires__grid">
+            <div class="tires__column">
+                <div class="tires__slider">
+                    <div class="tires__card card">
+                        <img width="288" height="288" class="tires__img" src="./assets/img/tire-img.png" alt="tire-img">
+                        <div class="tires__card-section card-section">
+                            <div class="tires__card-content">
+                                <div class="tires__ratings">
+                                    <div class="tires__comments">
+                                        <span class="tires__gray-block">2</span>
+                                    </div>
+                                    <div class="my-rating"></div>
+                                </div>
+                                <h3 class="tires__subtitle">Goodyear Vector 4Seasons</h3>
+                                <div class="tires__icons">
+    
+                                </div>
+                                <div class="tires__card-bottom">
+                                    <span class="tires__gray-block">В наличии: 14 шт.</span>
+                                    <div class="tires__card-btns button-group">
+                                        <button class="tires__card-btn tires__card-btn--expanded button" href="#">5 600 ₽</button>
+                                        <button class="tires__card-btn tires__card-btn--like button alt" href="#"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M7.44691 2.22421L7.44705 2.22393L7.44724 2.22358L7.4529 2.21283C7.45854 2.20225 7.46791 2.18503 7.481 2.16213C7.50721 2.11627 7.54808 2.04801 7.60353 1.96485C7.71498 1.79768 7.88216 1.57495 8.10355 1.35355C8.54906 0.908051 9.17938 0.5 10 0.5C10.9257 0.5 11.7979 0.732398 12.4299 1.25911C13.0459 1.77246 13.5 2.62024 13.5 4C13.5 6.71736 12.1976 9.53246 7 13.3799C1.80237 9.53246 0.5 6.71736 0.5 4C0.5 2.62024 0.954078 1.77246 1.57009 1.25911C2.20215 0.732398 3.07429 0.5 4 0.5C4.82062 0.5 5.45095 0.908051 5.89645 1.35355C6.11784 1.57495 6.28503 1.79768 6.39648 1.96485C6.45192 2.04801 6.4928 2.11627 6.51901 2.16213C6.53209 2.18503 6.54146 2.20225 6.54711 2.21283L6.55276 2.22358L6.55309 2.22422L6.55331 2.22465L6.55334 2.2247L6.55348 2.22498L7 3.11803L7.44652 2.22498L7.44667 2.2247L7.44669 2.22465L7.44691 2.22421Z" stroke="#FF7E00"/>
+                                            </svg></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tires__card card">
+                        <img width="288" height="288" class="tires__img" src="./assets/img/tire-img.png" alt="tire-img">
+                        <div class="tires__card-section card-section">
+                            <div class="tires__card-content">
+                                <div class="tires__ratings">
+                                    <div class="tires__comments">
+                                        <span class="tires__gray-block">2</span>
+                                    </div>
+                                    <div class="my-rating"></div>
+                                </div>
+                                <h3 class="tires__subtitle">Goodyear Vector 4Seasons SUV Gen-2</h3>
+                                <div class="tires__icons">
+    
+                                </div>
+                                <div class="tires__card-bottom">
+                                    <span class="tires__gray-block">В наличии: 14 шт.</span>
+                                    <div class="tires__card-btns button-group">
+                                        <button class="tires__card-btn tires__card-btn--expanded button" href="#">5 600 ₽</button>
+                                        <button class="tires__card-btn tires__card-btn--like button alt" href="#"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M7.44691 2.22421L7.44705 2.22393L7.44724 2.22358L7.4529 2.21283C7.45854 2.20225 7.46791 2.18503 7.481 2.16213C7.50721 2.11627 7.54808 2.04801 7.60353 1.96485C7.71498 1.79768 7.88216 1.57495 8.10355 1.35355C8.54906 0.908051 9.17938 0.5 10 0.5C10.9257 0.5 11.7979 0.732398 12.4299 1.25911C13.0459 1.77246 13.5 2.62024 13.5 4C13.5 6.71736 12.1976 9.53246 7 13.3799C1.80237 9.53246 0.5 6.71736 0.5 4C0.5 2.62024 0.954078 1.77246 1.57009 1.25911C2.20215 0.732398 3.07429 0.5 4 0.5C4.82062 0.5 5.45095 0.908051 5.89645 1.35355C6.11784 1.57495 6.28503 1.79768 6.39648 1.96485C6.45192 2.04801 6.4928 2.11627 6.51901 2.16213C6.53209 2.18503 6.54146 2.20225 6.54711 2.21283L6.55276 2.22358L6.55309 2.22422L6.55331 2.22465L6.55334 2.2247L6.55348 2.22498L7 3.11803L7.44652 2.22498L7.44667 2.2247L7.44669 2.22465L7.44691 2.22421Z" stroke="#FF7E00"/>
+                                            </svg></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tires__card card">
+                        <img width="288" height="288" class="tires__img" src="./assets/img/tire-img.png" alt="tire-img">
+                        <div class="tires__card-section card-section">
+                            <div class="tires__card-content">
+                                <div class="tires__ratings">
+                                    <div class="tires__comments">
+                                        <span class="tires__gray-block">2</span>
+                                    </div>
+                                    <div class="my-rating"></div>
+                                </div>
+                                <h3 class="tires__subtitle">Goodyear Vector 4Seasons</h3>
+                                <div class="tires__icons">
+    
+                                </div>
+                                <div class="tires__card-bottom">
+                                    <span class="tires__gray-block">В наличии: 14 шт.</span>
+                                    <div class="tires__card-btns button-group">
+                                        <button class="tires__card-btn tires__card-btn--expanded button" href="#">5 600 ₽</button>
+                                        <button class="tires__card-btn tires__card-btn--like button alt" href="#"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M7.44691 2.22421L7.44705 2.22393L7.44724 2.22358L7.4529 2.21283C7.45854 2.20225 7.46791 2.18503 7.481 2.16213C7.50721 2.11627 7.54808 2.04801 7.60353 1.96485C7.71498 1.79768 7.88216 1.57495 8.10355 1.35355C8.54906 0.908051 9.17938 0.5 10 0.5C10.9257 0.5 11.7979 0.732398 12.4299 1.25911C13.0459 1.77246 13.5 2.62024 13.5 4C13.5 6.71736 12.1976 9.53246 7 13.3799C1.80237 9.53246 0.5 6.71736 0.5 4C0.5 2.62024 0.954078 1.77246 1.57009 1.25911C2.20215 0.732398 3.07429 0.5 4 0.5C4.82062 0.5 5.45095 0.908051 5.89645 1.35355C6.11784 1.57495 6.28503 1.79768 6.39648 1.96485C6.45192 2.04801 6.4928 2.11627 6.51901 2.16213C6.53209 2.18503 6.54146 2.20225 6.54711 2.21283L6.55276 2.22358L6.55309 2.22422L6.55331 2.22465L6.55334 2.2247L6.55348 2.22498L7 3.11803L7.44652 2.22498L7.44667 2.2247L7.44669 2.22465L7.44691 2.22421Z" stroke="#FF7E00"/>
+                                            </svg></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tires__card card">
+                        <img width="288" height="288" class="tires__img" src="./assets/img/tire-img.png" alt="tire-img">
+                        <div class="tires__card-section card-section">
+                            <div class="tires__card-content">
+                                <div class="tires__ratings">
+                                    <div class="tires__comments">
+                                        <span class="tires__gray-block">2</span>
+                                    </div>
+                                    <div class="my-rating"></div>
+                                </div>
+                                <h3 class="tires__subtitle">Goodyear Vector 4Seasons</h3>
+                                <div class="tires__icons">
+    
+                                </div>
+                                <div class="tires__card-bottom">
+                                    <span class="tires__gray-block">В наличии: 14 шт.</span>
+                                    <div class="tires__card-btns button-group">
+                                        <button class="tires__card-btn tires__card-btn--expanded button" href="#">5 600 ₽</button>
+                                        <button class="tires__card-btn tires__card-btn--like button alt" href="#"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M7.44691 2.22421L7.44705 2.22393L7.44724 2.22358L7.4529 2.21283C7.45854 2.20225 7.46791 2.18503 7.481 2.16213C7.50721 2.11627 7.54808 2.04801 7.60353 1.96485C7.71498 1.79768 7.88216 1.57495 8.10355 1.35355C8.54906 0.908051 9.17938 0.5 10 0.5C10.9257 0.5 11.7979 0.732398 12.4299 1.25911C13.0459 1.77246 13.5 2.62024 13.5 4C13.5 6.71736 12.1976 9.53246 7 13.3799C1.80237 9.53246 0.5 6.71736 0.5 4C0.5 2.62024 0.954078 1.77246 1.57009 1.25911C2.20215 0.732398 3.07429 0.5 4 0.5C4.82062 0.5 5.45095 0.908051 5.89645 1.35355C6.11784 1.57495 6.28503 1.79768 6.39648 1.96485C6.45192 2.04801 6.4928 2.11627 6.51901 2.16213C6.53209 2.18503 6.54146 2.20225 6.54711 2.21283L6.55276 2.22358L6.55309 2.22422L6.55331 2.22465L6.55334 2.2247L6.55348 2.22498L7 3.11803L7.44652 2.22498L7.44667 2.2247L7.44669 2.22465L7.44691 2.22421Z" stroke="#FF7E00"/>
+                                            </svg></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="tires__button button alt">Посмотреть все шины</button>
+    </section>
+    <section class="disks">
+        <h2 class="disks__title">Популярные диски</h2>
+        <div class="disks__grid">
+            <div class="disks__column">
+                <div class="disks__slider">
+                    <div class="disks__card card">
+                        <img width="288" height="288" class="disks__img" src="./assets/img/disks-img-1.png" alt="tire-img">
+                        <div class="disks__card-section card-section">
+                            <div class="disks__card-content">
+                                <div class="disks__ratings">
+                                    <div class="disks__comments">
+    
+                                        <span class="disks__gray-block">2</span>
+                                    </div>
+                                    <div class="my-rating"></div>
+                                </div>
+                                <h3 class="disks__subtitle">Колесный диск Tech Line</h3>
+                                <div class="disks__icons">
+                                </div>
+                                <div class="disks__card-bottom">
+                                    <span class="disks__gray-block">В наличии: 14 шт.</span>
+                                    <div class="disks__card-btns button-group">
+                                        <button class="disks__card-btn disks__card-btn--expanded button" href="#">5 600 ₽</button>
+                                        <button class="disks__card-btn disks__card-btn--like button alt" href="#">
+                                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7.44691 2.22421L7.44705 2.22393L7.44724 2.22358L7.4529 2.21283C7.45854 2.20225 7.46791 2.18503 7.481 2.16213C7.50721 2.11627 7.54808 2.04801 7.60353 1.96485C7.71498 1.79768 7.88216 1.57495 8.10355 1.35355C8.54906 0.908051 9.17938 0.5 10 0.5C10.9257 0.5 11.7979 0.732398 12.4299 1.25911C13.0459 1.77246 13.5 2.62024 13.5 4C13.5 6.71736 12.1976 9.53246 7 13.3799C1.80237 9.53246 0.5 6.71736 0.5 4C0.5 2.62024 0.954078 1.77246 1.57009 1.25911C2.20215 0.732398 3.07429 0.5 4 0.5C4.82062 0.5 5.45095 0.908051 5.89645 1.35355C6.11784 1.57495 6.28503 1.79768 6.39648 1.96485C6.45192 2.04801 6.4928 2.11627 6.51901 2.16213C6.53209 2.18503 6.54146 2.20225 6.54711 2.21283L6.55276 2.22358L6.55309 2.22422L6.55331 2.22465L6.55334 2.2247L6.55348 2.22498L7 3.11803L7.44652 2.22498L7.44667 2.2247L7.44669 2.22465L7.44691 2.22421Z" stroke="#FF7E00"/>
+                                                </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="disks__card card">
+                        <img width="288" height="288" class="disks__img" src="./assets/img/disks-img-2.png" alt="tire-img">
+                        <div class="disks__card-section card-section">
+                            <div class="disks__card-content">
+                                <div class="disks__ratings">
+                                    <div class="disks__comments">
+    
+                                        <span class="disks__gray-block">2</span>
+                                    </div>
+                                    <div class="my-rating"></div>
+                                </div>
+                                <h3 class="disks__subtitle">Колесный диск Tech Line</h3>
+                                <div class="disks__icons">
+                                </div>
+                                <div class="disks__card-bottom">
+                                    <span class="disks__gray-block">В наличии: 14 шт.</span>
+                                    <div class="disks__card-btns button-group">
+                                        <button class="disks__card-btn disks__card-btn--expanded button" href="#">5 600 ₽</button>
+                                        <button class="disks__card-btn disks__card-btn--like button alt" href="#">
+                                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7.44691 2.22421L7.44705 2.22393L7.44724 2.22358L7.4529 2.21283C7.45854 2.20225 7.46791 2.18503 7.481 2.16213C7.50721 2.11627 7.54808 2.04801 7.60353 1.96485C7.71498 1.79768 7.88216 1.57495 8.10355 1.35355C8.54906 0.908051 9.17938 0.5 10 0.5C10.9257 0.5 11.7979 0.732398 12.4299 1.25911C13.0459 1.77246 13.5 2.62024 13.5 4C13.5 6.71736 12.1976 9.53246 7 13.3799C1.80237 9.53246 0.5 6.71736 0.5 4C0.5 2.62024 0.954078 1.77246 1.57009 1.25911C2.20215 0.732398 3.07429 0.5 4 0.5C4.82062 0.5 5.45095 0.908051 5.89645 1.35355C6.11784 1.57495 6.28503 1.79768 6.39648 1.96485C6.45192 2.04801 6.4928 2.11627 6.51901 2.16213C6.53209 2.18503 6.54146 2.20225 6.54711 2.21283L6.55276 2.22358L6.55309 2.22422L6.55331 2.22465L6.55334 2.2247L6.55348 2.22498L7 3.11803L7.44652 2.22498L7.44667 2.2247L7.44669 2.22465L7.44691 2.22421Z" stroke="#FF7E00"/>
+                                                </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="disks__card card">
+                        <img width="288" height="288" class="disks__img" src="./assets/img/disks-img-3.png" alt="tire-img">
+                        <div class="disks__card-section card-section">
+                            <div class="disks__card-content">
+                                <div class="disks__ratings">
+                                    <div class="disks__comments">
+    
+                                        <span class="disks__gray-block">2</span>
+                                    </div>
+                                    <div class="my-rating"></div>
+                                </div>
+                                <h3 class="disks__subtitle">Колесный диск Tech Line</h3>
+                                <div class="disks__icons">
+                                </div>
+                                <div class="disks__card-bottom">
+                                    <span class="disks__gray-block">В наличии: 14 шт.</span>
+                                    <div class="disks__card-btns button-group">
+                                        <button class="disks__card-btn disks__card-btn--expanded button" href="#">5 600 ₽</button>
+                                        <button class="disks__card-btn disks__card-btn--like button alt" href="#">
+                                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7.44691 2.22421L7.44705 2.22393L7.44724 2.22358L7.4529 2.21283C7.45854 2.20225 7.46791 2.18503 7.481 2.16213C7.50721 2.11627 7.54808 2.04801 7.60353 1.96485C7.71498 1.79768 7.88216 1.57495 8.10355 1.35355C8.54906 0.908051 9.17938 0.5 10 0.5C10.9257 0.5 11.7979 0.732398 12.4299 1.25911C13.0459 1.77246 13.5 2.62024 13.5 4C13.5 6.71736 12.1976 9.53246 7 13.3799C1.80237 9.53246 0.5 6.71736 0.5 4C0.5 2.62024 0.954078 1.77246 1.57009 1.25911C2.20215 0.732398 3.07429 0.5 4 0.5C4.82062 0.5 5.45095 0.908051 5.89645 1.35355C6.11784 1.57495 6.28503 1.79768 6.39648 1.96485C6.45192 2.04801 6.4928 2.11627 6.51901 2.16213C6.53209 2.18503 6.54146 2.20225 6.54711 2.21283L6.55276 2.22358L6.55309 2.22422L6.55331 2.22465L6.55334 2.2247L6.55348 2.22498L7 3.11803L7.44652 2.22498L7.44667 2.2247L7.44669 2.22465L7.44691 2.22421Z" stroke="#FF7E00"/>
+                                                </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="disks__card card">
+                        <img width="288" height="288" class="disks__img" src="./assets/img/disks-img-4.png" alt="tire-img">
+                        <div class="disks__card-section card-section">
+                            <div class="disks__card-content">
+                                <div class="disks__ratings">
+                                    <div class="disks__comments">
+    
+                                        <span class="disks__gray-block">2</span>
+                                    </div>
+                                    <div class="my-rating"></div>
+                                </div>
+                                <h3 class="disks__subtitle">Колесный диск Tech Line</h3>
+                                <div class="disks__icons">
+                                </div>
+                                <div class="disks__card-bottom">
+                                    <span class="disks__gray-block">В наличии: 14 шт.</span>
+                                    <div class="disks__card-btns button-group">
+                                        <button class="disks__card-btn disks__card-btn--expanded button" href="#">5 600 ₽</button>
+                                        <button class="disks__card-btn disks__card-btn--like button alt" href="#">
+                                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7.44691 2.22421L7.44705 2.22393L7.44724 2.22358L7.4529 2.21283C7.45854 2.20225 7.46791 2.18503 7.481 2.16213C7.50721 2.11627 7.54808 2.04801 7.60353 1.96485C7.71498 1.79768 7.88216 1.57495 8.10355 1.35355C8.54906 0.908051 9.17938 0.5 10 0.5C10.9257 0.5 11.7979 0.732398 12.4299 1.25911C13.0459 1.77246 13.5 2.62024 13.5 4C13.5 6.71736 12.1976 9.53246 7 13.3799C1.80237 9.53246 0.5 6.71736 0.5 4C0.5 2.62024 0.954078 1.77246 1.57009 1.25911C2.20215 0.732398 3.07429 0.5 4 0.5C4.82062 0.5 5.45095 0.908051 5.89645 1.35355C6.11784 1.57495 6.28503 1.79768 6.39648 1.96485C6.45192 2.04801 6.4928 2.11627 6.51901 2.16213C6.53209 2.18503 6.54146 2.20225 6.54711 2.21283L6.55276 2.22358L6.55309 2.22422L6.55331 2.22465L6.55334 2.2247L6.55348 2.22498L7 3.11803L7.44652 2.22498L7.44667 2.2247L7.44669 2.22465L7.44691 2.22421Z" stroke="#FF7E00"/>
+                                                </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="disks__button button alt">Посмотреть все диски</button>
+    </section>
+    <section class="stocks">
+        <h2 class="stocks__title">Акции</h2>
+        <div class="stocks__slider">
+            <div class="stocks__card card">
+                <img src="./assets/img/stocks-img.png" alt="stocks-img-1">
+                <div class="stocks__card-section card-section">
+                    <div class="stocks__card-content">
+                        <img width="286" height="104" class="stocks__block" src="./assets/img/img-union.png"
+                            alt="stocks-img-union">
+                        <div class="stocks__wrapper">
+                            <h3 class="stocks__subtitle">Тормозные колодки со скидкой 10%</h3>
+                            <ul class="stocks__list">
+                                <li class="stocks__item">
+                                    Диски
+                                </li>
+                                <li class="stocks__item">
+                                    Шины
+                                </li>
+                            </ul>
+                            <div class="stocks__stock-time">
+                                <p>Действует до: <span
+                                        class="stocks__card-text stocks__card-text--bold">30.09.2021</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="stocks__card card">
+                <img src="./assets/img/stocks-img-2.png" alt="stocks-img-2">
+                <div class="stocks__card-section card-section">
+                    <div class="stocks__card-content">
+                        <img width="286" height="104" class="stocks__block" src="./assets/img/img-union.png"
+                            alt="stocks-img-union">
+                        <div class="stocks__wrapper">
+                            <h3 class="stocks__subtitle">Тормозные колодки со скидкой 10%</h3>
+                            <ul class="stocks__list">
+                                <li class="stocks__item">
+                                    Диски
+                                </li>
+                                <li class="stocks__item">
+                                    Шины
+                                </li>
+                                
+                            </ul>
+                            <div class="stocks__stock-time">
+                                <p>Действует до: <span
+                                        class="stocks__card-text stocks__card-text--bold">30.09.2021</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="stocks__card card">
+                <img src="./assets/img/stocks-img-3.png" alt="stocks-img-3">
+                <div class="stocks__card-section card-section">
+                    <div class="stocks__card-content">
+                        <img width="286" height="104" class="stocks__block" src="./assets/img/img-union.png"
+                            alt="stocks-img-union">
+                        <div class="stocks__wrapper">
+                            <h3 class="stocks__subtitle">Тормозные колодки со скидкой 10%</h3>
+                            <ul class="stocks__list">
+                                <li class="stocks__item">
+                                    Диски
+                                </li>
+                                <li class="stocks__item">
+                                    Шины
+                                </li>
+                                
+                            </ul>
+                            <div class="stocks__stock-time">
+                                <p>Действует до: <span
+                                        class="stocks__card-text stocks__card-text--bold">30.09.2021</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <button class="stocks__btn button alt">Посмотреть все акции</button>
+    </section>
+    <section class="about">
+        <div class="about__grid">
+            <div class="about__imgs">
+                <img class="about__logo" src="./assets/img/about-logo-img.png" alt="about-logo" width="112" height="120">
+                <img class="about__img" src="./assets/img/about-img.png" alt="about-img" width="288" height="192">
+            </div>
+            <div class="about__content">
+                <p class="about__title">Шинный центр 13 — один из самых крупных магазинов по продаже шин и дисков в Саранске</p>
+            <p class="about__text">
+                Если вы хотите правильно купить шины в Саранске, то должны знать об основных параметрах подбора покрышек.
+                Главное — ориентироваться на информацию, указанную в маркировке.
+            </p>
+            <p class="about__text">Наша сеть — официальный дилер многих ведущих производителей, у нас вы можете купить шины
+                и диски с полноценной гарантией на весь срок эксплуатации.</p>
+            <button class="about__btn button alt">Подробнее</button>
+            </div>
+        </div>
+    </section>
+</main>
+<footer class="footer">
+    <img width="320" height="97" class="footer__img" src="./assets/img/footer-img.png" alt="footer-img">
+    <img class="footer__img-table" src="./assets/img/footer-svg.svg" alt="footer-img">
+    <img class="footer__img-desk" src="./assets/img/footer-svg-desk.svg" alt="footer-img">
+    <div class="footer__content">
+        <a href="tel:+88008888888" class="footer__tel">8 800 888-88-88</a>
+        <p class="footer__text">Звонок бесплатный</p>
+        <button class="footer__btn button alt expanded">Заказать обратный звонок</button>
+        <p class="footer__text">Мы в социальных сетях</p>
+        <div class="footer__socials">
+            <a href="#" class="footer__link button alt"><img src="./assets/img/inst-icon.png" alt="inst-icon" width="16" height="16"></a>
+            <a href="#" class="footer__link button alt"><img src="./assets/img/vk-icon.svg" alt="vk-icon" width="16" height="16"></a>
+            <a href="#" class="footer__link button alt"><img src="./assets/img/tel-icon.svg" alt="tel-icon" width="16" height="16"></a>
+        </div>
+        <p class="footer__text">Создание и продвижение сайта</p>
+        <a href="/" class="footer__logo">
+            <img width="130" height="50" class="footer__logo-img" src="./assets/img/footer-logo.png" alt="footer-logo">
+        </a>
+    </div>
+    <div class="footer__left">
+        <div class="footer__column">
+            <p class="footer__column-name">Товары</p>
+            <ul class="footer__list">
+                <li class="footer__item"><a class="footer__column-link" href="#">Автомобильные шины</a></li>
+                <li class="footer__item"><a class="footer__column-link" href="#">Автомобильные диски</a></li>
+                <li class="footer__item"><a class="footer__column-link" href="#">Аксессуары для шин, дисков и шиномонтажа</a></li>
+                <li class="footer__item"><a class="footer__column-link" href="#">Аккумуляторы</a></li>
+                <li class="footer__item"><a class="footer__column-link" href="#">Автомасла</a></li>
+                <li class="footer__item"><a class="footer__column-link" href="#">Автозапчасти</a></li>
+                <li class="footer__item"><a class="footer__column-link" href="#">Автоэлектроника</a></li>
+                <li class="footer__item"><a class="footer__column-link" href="#">Автохимия 
+                    и автокосметика</a></li>
+                <li class="footer__item"><a class="footer__column-link" href="#">Внешний декор, тюнинг, защита</a></li>
+                <li class="footer__item"><a class="footer__column-link" href="#">Инструменты 
+                    и техническая помощь</a></li>
+                <li class="footer__item"><a class="footer__column-link" href="#">Компрессоры</a></li>
+            </ul>
+        </div>
+        <div class="footer__column">
+            <p class="footer__column-name">Услуги</p>
+            <ul class="footer__list">
+                <li class="footer__item"><a class="footer__column-link" href="#">Шиномонтаж</a></li>
+                <li class="footer__item"><a class="footer__column-link" href="#">Всё для шиномонтажа</a></li>
+                <li class="footer__item"><a class="footer__column-link" href="#">Ремонт и правка дисков</a></li>
+                <li class="footer__item"><a class="footer__column-link" href="#">Ошиповка зимних шин</a></li>
+                <li class="footer__item"><a class="footer__column-link" href="#">Сезонное хранение</a></li>
+                <li class="footer__item"><a class="footer__column-link" href="#">Ремонт шин</a></li>
+                <li class="footer__item"><a class="footer__column-link" href="#">Сход-развал</a></li>
+                <li class="footer__item"><a class="footer__column-link" href="#">Мелкосрочный ремонт</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer__right">
+        <div class="footer__column">
+            <p class="footer__column-name">Компания</p>
+            <ul class="footer__list">
+                <li class="footer__item"><a class="footer__column-link" href="#">О компании</a></li>
+                <li class="footer__item"><a class="footer__column-link" href="#">Оплата</a></li>
+                <li class="footer__item"><a class="footer__column-link" href="#">Доставка</a></li>
+                <li class="footer__item"><a class="footer__column-link" href="#">Статьи и новости</a></li>
+                <li class="footer__item"><a class="footer__column-link" href="#">Акции и скидки</a></li>
+                <li class="footer__item"><a class="footer__column-link" href="#">Контакты</a></li>
+                <li class="footer__item"><a class="footer__column-link" href="#">Кредит</a></li>
+                <li class="footer__item"><a class="footer__column-link" href="#">Гарантия</a></li>
+                <li class="footer__item"><a class="footer__column-link" href="#">Подарочные сертификаты</a></li>
+                <li class="footer__item"><a class="footer__column-link" href="#">Оптовым клиентам</a></li>
+                <li class="footer__item"><a class="footer__column-link" href="#">Возврат товара</a></li>
+            </ul>
+        </div>
+        <div class="footer__column">
+            <p class="footer__column-name">Личный кабинет</p>
+            <ul class="footer__list">
+                <li class="footer__item"><a class="footer__column-link" href="#">Корзина</a></li>
+                <li class="footer__item"><a class="footer__column-link" href="#">Баллы</a></li>
+                <li class="footer__item"><a class="footer__column-link" href="#">Гараж</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+<script src="assets/js/app.js"></script>
+</body>
+</html>
