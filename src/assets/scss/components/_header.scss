@@ -235,6 +235,12 @@
                     no-repeat;
             }
         }
+        &__menu-big {
+            top: rem(77);
+            &--auth {
+                padding: rem(40) rem(90) rem(48) rem(90);
+            }
+        }
         &__grid-table {
             padding: rem(32) rem(58) rem(48) rem(58);
             display: grid;
@@ -468,6 +474,53 @@
                     no-repeat;
             }
         }
+        &__in {
+            font-size: rem($fz-title);
+            font-family: "IBM Medium";
+            color: $primary-color;
+            line-height: rem(32);
+        }
+        &__form {
+            @include dflex;
+            justify-content: space-between;
+            height: rem(40);
+            input {
+                max-width: rem(416);
+            }
+            button {
+                font-family: "IBM Medium";
+                font-size: rem($fz-main);
+                line-height: rem(16);
+                padding-left: rem(37) !important;
+                padding-right: rem(37) !important;
+                border: none !important;
+            }
+        }
+        &__label {
+            color: $divide-gray;
+            margin-right: 0 !important;
+            font-size: rem($fz-main);
+            line-height: rem(16);
+            font-family: "IBM";
+            span {
+                color: $blue;
+            }
+        }
+        &__agree {
+            display: flex;
+            margin-top: rem(16);
+        }
+        &__grid {
+            &--auth {
+                display: grid;
+                grid-template-rows: rem(88) rem(136);
+                row-gap: rem(24);
+                justify-content: center;
+            }
+        }
+        &__right {
+            max-width: rem(600);
+        }
         .medium-horizontal {
             display: none !important;
         }
@@ -555,9 +608,11 @@
                 margin: 0;
             }
             &--auth {
+                grid-template-rows: none;
+                row-gap: none;
                 grid-template-columns: rem(492) rem(492);
                 column-gap: rem(240);
-                padding: rem(30) rem(60) rem(50) rem(60);
+                padding: rem(30) rem(60) 0 rem(60);
             }
         }
         &__in {
@@ -595,9 +650,6 @@
         &__agree {
             display: flex;
             margin-top: rem(16);
-            input[type="checkbox"]:checked {
-                background-color: $primary-color;
-            }
         }
         &__left-name {
             font-family: "IBM Medium";

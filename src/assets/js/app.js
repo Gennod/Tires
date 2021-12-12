@@ -50,6 +50,10 @@ $(document).ready(function () {
         $(".header__menu-big--company").slideToggle("slow");
         $(".header__menu-big--company").removeClass("header__menu-big--active")
       }
+      if ($(".header__menu-big--auth").hasClass("header__menu-big--active")) {
+        $(".header__menu-big--auth").slideToggle("slow");
+        $(".header__menu-big--auth").removeClass("header__menu-big--active")
+      }
       if ($(".header__menu-big--products").hasClass("header__menu-big--active")) {
         $(".header__menu-big--products").slideToggle("slow");
         $(".header__menu-big--products").removeClass("header__menu-big--active");
@@ -67,6 +71,10 @@ $(document).ready(function () {
       if ($(".header__menu-big--products").hasClass("header__menu-big--active")) {
         $(".header__menu-big--products").slideToggle("slow");
         $(".header__menu-big--products").removeClass("header__menu-big--active");
+      }
+      if ($(".header__menu-big--auth").hasClass("header__menu-big--active")) {
+        $(".header__menu-big--auth").slideToggle("slow");
+        $(".header__menu-big--auth").removeClass("header__menu-big--active")
       }
       if ($(".header__menu-big--services").hasClass("header__menu-big--active")) {
         $(".header__menu-big--services").slideToggle("slow");
@@ -86,6 +94,10 @@ $(document).ready(function () {
         $(".header__menu-big--products").slideToggle("slow");
         $(".header__menu-big--products").removeClass("header__menu-big--active")
       }
+      if ($(".header__menu-big--auth").hasClass("header__menu-big--active")) {
+        $(".header__menu-big--auth").slideToggle("slow");
+        $(".header__menu-big--auth").removeClass("header__menu-big--active")
+      }
       if ($(".header__menu-big--company").hasClass("header__menu-big--active")) {
         $(".header__menu-big--company").slideToggle("slow");
         $(".header__menu-big--company").removeClass("header__menu-big--active");
@@ -95,8 +107,46 @@ $(document).ready(function () {
       }
     });
     $("#ui").on("click", () => {
-        $(".header__menu-big--auth").slideToggle("slow");
-        $(".header__menu-big--company").addClass("header__menu-big--active");
+        if ($(".header__menu-big--services").hasClass("header__menu-big--active")) {
+            $(".header__menu-big--services").slideToggle("slow");
+            $(".header__menu-big--services").removeClass("header__menu-big--active")
+          }
+          if ($(".header__menu-big--products").hasClass("header__menu-big--active")) {
+            $(".header__menu-big--products").slideToggle("slow");
+            $(".header__menu-big--products").removeClass("header__menu-big--active")
+          }
+          if ($(".header__menu-big--company").hasClass("header__menu-big--active")) {
+            $(".header__menu-big--company").slideToggle("slow");
+            $(".header__menu-big--company").removeClass("header__menu-big--active");
+          } 
+          if ($(".header__menu-big--auth").hasClass("header__menu-big--active")) {
+            $(".header__menu-big--auth").slideToggle("slow");
+            $(".header__menu-big--auth").removeClass("header__menu-big--active")
+          } else {
+            $(".header__menu-big--auth").slideToggle("slow");
+            $(".header__menu-big--auth").addClass("header__menu-big--active");
+          }
+      });
+      $("#log").on("click", () => {
+        if ($(".header__menu-big--services").hasClass("header__menu-big--active")) {
+            $(".header__menu-big--services").slideToggle("slow");
+            $(".header__menu-big--services").removeClass("header__menu-big--active")
+          }
+          if ($(".header__menu-big--products").hasClass("header__menu-big--active")) {
+            $(".header__menu-big--products").slideToggle("slow");
+            $(".header__menu-big--products").removeClass("header__menu-big--active")
+          }
+          if ($(".header__menu-big--company").hasClass("header__menu-big--active")) {
+            $(".header__menu-big--company").slideToggle("slow");
+            $(".header__menu-big--company").removeClass("header__menu-big--active");
+          } 
+          if ($(".header__menu-big--auth").hasClass("header__menu-big--active")) {
+            $(".header__menu-big--auth").slideToggle("slow");
+            $(".header__menu-big--auth").removeClass("header__menu-big--active")
+          } else {
+            $(".header__menu-big--auth").slideToggle("slow");
+            $(".header__menu-big--auth").addClass("header__menu-big--active");
+          }
       });
 
     $(".disks__card-btn--like").on("click", (e) => {
